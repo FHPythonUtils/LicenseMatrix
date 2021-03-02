@@ -2,13 +2,14 @@
 """
 
 from difflib import SequenceMatcher
-from json import dump, load
 from operator import itemgetter
 from pathlib import Path
 from time import sleep
 
 import regex
 import requests
+
+from ..json import dump, load
 
 # pylint: disable=invalid-name
 

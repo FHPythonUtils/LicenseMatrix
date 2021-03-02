@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 from difflib import SequenceMatcher
-from json import load
 from operator import itemgetter
 from pathlib import Path
 from typing import Optional
 
 from licensematrix.license_type import License
+from .json import load
 
 THISDIR = str(Path(__file__).resolve().parent)
 
