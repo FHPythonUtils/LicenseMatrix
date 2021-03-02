@@ -1,0 +1,119 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "additionalProperties": {
+        "$ref": "#/definitions/LicenseValue"
+    },
+    "definitions": {
+        "LicenseValue": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "short": {
+                    "type": "string"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Tag"
+                    }
+                },
+                "must": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Must"
+                    }
+                },
+                "cannot": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Can"
+                    }
+                },
+                "can": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Can"
+                    }
+                },
+                "type": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Tag"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "spdx": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "can",
+                "cannot",
+                "must",
+                "short",
+                "spdx",
+                "tags",
+                "title",
+                "type"
+            ],
+            "title": "LicenseValue"
+        },
+        "Can": {
+            "type": "string",
+            "enum": [
+                "Commercial Use",
+                "Modify",
+                "Distribute",
+                "Sublicense",
+                "Private Use",
+                "Use Patent Claims",
+                "Place Warranty",
+                "Hold Liable",
+                "Include Copyright",
+                "Include Original",
+                "Include License",
+                "Relicense",
+                "Use Trademark"
+            ],
+            "title": "Can"
+        },
+        "Must": {
+            "type": "string",
+            "enum": [
+                "Include Copyright",
+                "Include License",
+                "Include Original",
+                "Disclose Source",
+                "State Changes",
+                "Include Notice",
+                "Rename",
+                "Include Install Instructions",
+                "Give Credit",
+                "Compensate for Damages"
+            ],
+            "title": "Must"
+        },
+        "Tag": {
+            "type": "string",
+            "enum": [
+                "Permissive",
+                "OSI-Approved",
+                "Open Source",
+                "Weak Copyleft",
+                "Creative Commons",
+                "Public Domain",
+                "Copyleft",
+                "GNU",
+                "Viral"
+            ],
+            "title": "Tag"
+        }
+    }
+}
