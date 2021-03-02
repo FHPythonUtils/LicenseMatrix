@@ -10,7 +10,7 @@ from typing import Optional
 
 from licensematrix.license_type import License
 
-THISDIR = str(Path(__file__).resolve().parent)
+THISDIR = Path(__file__).resolve().parent
 
 
 class LicenseMatrix():
@@ -22,7 +22,7 @@ class LicenseMatrix():
 		self.licenses = self.buildLicenses()
 
 	def buildLicenses(self,
-	fileName: str = THISDIR + "/license_matrix.json") -> list[License]: # yapf: disable
+	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]: # yapf: disable
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
