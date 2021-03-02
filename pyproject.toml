@@ -30,6 +30,24 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.7"
 
+[tool.pylint.messages_control]
+disable = ["too-many-instance-attributes", "too-many-arguments"]
+
+[tool.pylint.format]
+max-line-length = 100500
+single-line-if-stmt = true
+indent-string = "\t"
+indent-after-paren = 4
+expected-line-ending-format = "LF"
+module-naming-style = "snake_case"
+class-naming-style = "PascalCase"
+const-naming-style = "UPPER_CASE"
+function-naming-style = "camelCase"
+method-naming-style = "camelCase"
+argument-naming-style = "camelCase"
+attr-naming-style = "camelCase"
+variable-naming-style = "camelCase"
+
 
 [build-system]
 requires = ["poetry-core"]
