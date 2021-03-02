@@ -34,8 +34,7 @@ with open(THISDIR / "licenselist.txt") as licenseList:
 		modules = data["modules"]
 		# Calculate the type of license from tags and the description
 		licenseType = None
-		if "Permissive" in tags or "permissive" in modules["summary"]["text"].lower(
-		):
+		if "Permissive" in tags or "permissive" in modules["summary"]["text"].lower():
 			licenseType = "Permissive"
 		elif "Viral" in tags or "viral" in modules["summary"]["text"].lower():
 			licenseType = "Viral"
@@ -48,10 +47,9 @@ with open(THISDIR / "licenselist.txt") as licenseList:
 		"text"].lower():
 			licenseType = "Weak Copyleft"
 		# Rules: must, cannot, can
-		must = [must["attribute"]["title"] for must in modules["summary"]["must"]]
-		cannot = [
-		must["attribute"]["title"] for must in modules["summary"]["cannot"]]
-		can = [must["attribute"]["title"] for must in modules["summary"]["can"]]
+		must = [mod["attribute"]["title"] for mod in modules["summary"]["must"]]
+		cannot = [mod["attribute"]["title"] for mod in modules["summary"]["cannot"]]
+		can = [mod["attribute"]["title"] for mod in modules["summary"]["can"]]
 		# Lookup the spdx id
 		spdx = None
 		similarity = []
@@ -61,9 +59,10 @@ with open(THISDIR / "licenselist.txt") as licenseList:
 		spdx = max(similarity, key=itemgetter(0))[1]
 		# Append the license data to the python dict
 		license_mat[data["slug"]] = {
-		"title": data["title"], "short": data["shorthand"]
-		if "shorthand" in data else data["slug"], "tags": tags, "must": must,
-		"cannot": cannot, "can": can, "type": licenseType, "spdx": spdx}
+		"title": data["title"],
+		"short": data["shorthand"] if "shorthand" in data else data["slug"],
+		"tags": tags, "must": must, "cannot": cannot, "can": can, "type": licenseType,
+		"spdx": spdx}
 		# Give the endpoint a chance to breathe
 		sleep(2)
 

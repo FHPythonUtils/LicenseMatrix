@@ -128,8 +128,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		if strict.index(self.type) < strict.index(dest.type):
 			return False
 		if dest.isViral() and not equal(self, dest):
@@ -150,8 +149,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		# If the source has a more restrictive license then the derivative work
 		# must be relicensed
 		if strict.index(self.type) > strict.index(dest.type):

@@ -55,12 +55,12 @@ enable = [
 	'W',  # Warning
 	'R',  # Refactor
 	'C',  # Convention
-	'I',  # Informational
 ]
 disable=[
 	"pointless-string-statement",
 	"superfluous-parens",
 	"bad-continuation",
 	"wrong-import-position",
-	"unsubscriptable-object"
+	"unsubscriptable-object",
+	"no-absolute-import",
 ]
