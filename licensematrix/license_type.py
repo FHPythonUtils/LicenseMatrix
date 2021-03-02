@@ -9,16 +9,26 @@ from __future__ import annotations
 from typing import Any, Optional
 
 
-class License():
+class License:
 	"""Represent a license.
 
 	Source: represents an existing license
 	Dest: represents a new combined license (possibly for a combined work)
 	"""
-	def __init__(self, name: str = "", title: str = "", shortName: str = "",
-	tags: Optional[list[str]] = None, must: Optional[list[str]] = None,
-	cannot: Optional[list[str]] = None, can: Optional[list[str]] = None,
-	typeIn: str = "", spdx: str = "", fromDict: Optional[dict[str, Any]] = None):
+
+	def __init__(
+		self,
+		name: str = "",
+		title: str = "",
+		shortName: str = "",
+		tags: Optional[list[str]] = None,
+		must: Optional[list[str]] = None,
+		cannot: Optional[list[str]] = None,
+		can: Optional[list[str]] = None,
+		typeIn: str = "",
+		spdx: str = "",
+		fromDict: Optional[dict[str, Any]] = None,
+	):
 		"""Construct License. Create from a dict of 'by hand'.
 
 		Args:
@@ -50,8 +60,11 @@ class License():
 		if fromDict is not None:
 			self.title = fromDict["title"]
 			self.shortName = fromDict["short"]
-			self.tags = list(set([fromDict["type"]]
-			+ fromDict["tags"])) if fromDict["type"] is not None else fromDict["tags"]
+			self.tags = (
+				list(set([fromDict["type"]] + fromDict["tags"]))
+				if fromDict["type"] is not None
+				else fromDict["tags"]
+			)
 			self.must = fromDict["must"]
 			self.cannot = fromDict["cannot"]
 			self.can = fromDict["can"]
@@ -97,11 +110,17 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(self.name + "+" + rhs.name, self.title + "+" + rhs.title,
-		self.shortName + "+" + rhs.shortName, list(set(self.tags + rhs.tags)),
-		list(set(self.must + rhs.must)), list(set(self.cannot + rhs.cannot)),
-		list(set(self.can + rhs.can)), getMostStrictType(self.type, rhs.type),
-		mergeSPDX(self.spdx, rhs.spdx))
+		return License(
+			self.name + "+" + rhs.name,
+			self.title + "+" + rhs.title,
+			self.shortName + "+" + rhs.shortName,
+			list(set(self.tags + rhs.tags)),
+			list(set(self.must + rhs.must)),
+			list(set(self.cannot + rhs.cannot)),
+			list(set(self.can + rhs.can)),
+			getMostStrictType(self.type, rhs.type),
+			mergeSPDX(self.spdx, rhs.spdx),
+		)
 
 	def mergeIntoDest(self, dest: License):
 		"""Combine two licenses into one super license, but preserve the...
@@ -114,10 +133,17 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(dest.name, dest.title, dest.shortName,
-		list(set(self.tags + dest.tags)), list(set(self.must + dest.must)),
-		list(set(self.cannot + dest.cannot)), list(set(self.can + dest.can)),
-		getMostStrictType(self.type, dest.type), mergeSPDX(self.spdx, dest.spdx))
+		return License(
+			dest.name,
+			dest.title,
+			dest.shortName,
+			list(set(self.tags + dest.tags)),
+			list(set(self.must + dest.must)),
+			list(set(self.cannot + dest.cannot)),
+			list(set(self.can + dest.can)),
+			getMostStrictType(self.type, dest.type),
+			mergeSPDX(self.spdx, dest.spdx),
+		)
 
 	def naiveCompatSource(self, dest: License) -> bool:
 		"""Check the destination (rhs) is compatible with the source license (self).
@@ -128,8 +154,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		if strict.index(self.type) < strict.index(dest.type):
 			return False
 		if dest.isViral() and not equal(self, dest):
@@ -150,8 +175,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		# If the source has a more restrictive license then the derivative work
 		# must be relicensed
 		if strict.index(self.type) > strict.index(dest.type):
@@ -211,5 +235,8 @@ def equal(licenseA: License, licenseB: License) -> bool:
 	Returns:
 		bool: equal?
 	"""
-	return (licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name
-	or licenseA.shortName == licenseB.shortName)
+	return (
+		licenseA.spdx == licenseB.spdx
+		or licenseA.name == licenseB.name
+		or licenseA.shortName == licenseB.shortName
+	)

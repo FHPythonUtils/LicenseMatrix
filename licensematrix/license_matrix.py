@@ -17,16 +17,16 @@ except ImportError:
 THISDIR = Path(__file__).resolve().parent
 
 
-class LicenseMatrix():
-	"""Make a list of Licenses from a json file.
-	"""
+class LicenseMatrix:
+	"""Make a list of Licenses from a json file."""
+
 	def __init__(self):
-		"""Make a list of Licenses from a json file.
-		"""
+		"""Make a list of Licenses from a json file."""
 		self.licenses = self.buildLicenses()
 
-	def buildLicenses(self,
-	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]: # yapf: disable
+	def buildLicenses(
+		self, fileName: str = str(THISDIR / "license_matrix.json")
+	) -> list[License]:  # yapf: disable
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
@@ -114,8 +114,11 @@ class LicenseMatrix():
 		search = search.lower()
 		licenses = []
 		for lice in self.licenses:
-			if (search in lice.name.lower() or search in lice.shortName.lower()
-			or search in lice.spdx.lower()):
+			if (
+				search in lice.name.lower()
+				or search in lice.shortName.lower()
+				or search in lice.spdx.lower()
+			):
 				licenses.append(lice)
 		return licenses
 
