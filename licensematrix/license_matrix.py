@@ -3,12 +3,16 @@
 from __future__ import annotations
 
 from difflib import SequenceMatcher
-from json import load
 from operator import itemgetter
 from pathlib import Path
 from typing import Optional
 
 from licensematrix.license_type import License
+
+try:
+	import ujson as json
+except ImportError:
+	import json
 
 THISDIR = Path(__file__).resolve().parent
 
@@ -65,7 +69,7 @@ class LicenseMatrix():
 		"""
 		licenses = []
 		with open(fileName, encoding="utf-8") as matrix:
-			matrixDict = load(matrix)
+			matrixDict = json.load(matrix)
 			for lice in matrixDict:
 				licenses.append(License(lice, fromDict=matrixDict[lice]))
 		return licenses
