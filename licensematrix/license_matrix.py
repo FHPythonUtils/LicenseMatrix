@@ -26,7 +26,7 @@ class LicenseMatrix():
 		self.licenses = self.buildLicenses()
 
 	def buildLicenses(self,
-	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]: # yapf: disable
+	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]:
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
