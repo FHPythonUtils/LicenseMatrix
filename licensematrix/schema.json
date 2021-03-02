@@ -1,0 +1,61 @@
+{
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string",
+			"description": "Corresponds to GH title"
+		},
+		"short": {
+			"type": "string",
+			"description": "Corresponds to GH nickname"
+		},
+		"spdx": {
+			"type": ["null", "string"],
+			"description": "Corresponds to GH spdx-id"
+		},
+		"tags": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": ["Copyleft", "Creative Commons", "GNU", "OSI-Approved", "Open Source", "Permissive", "Public Domain", "Viral", "Weak Copyleft"]
+			}
+		},
+		"must": {
+			"description": "Corresponds to GH conditions",
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": ["Compensate for Damages", "Disclose Source", "Give Credit", "Include Copyright", "Include Install Instructions", "Include License", "Include Notice", "Include Original", "Rename", "State Changes"]
+			}
+		},
+		"cannot": {
+			"description": "Corresponds to GH limitations",
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": ["Commercial Use", "Hold Liable", "Include Copyright", "Place Warranty", "Sublicense", "Use Patent Claims", "Use Trademark"]
+			}
+		},
+		"can": {
+			"description": "Corresponds to GH permissions",
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": ["Commercial Use", "Distribute", "Hold Liable", "Include Copyright", "Include License", "Include Original", "Modify", "Place Warranty", "Private Use", "Relicense", "Sublicense", "Use Patent Claims"]
+			}
+		},
+		"type": {
+			"$anyOf": [
+				{
+					"type": "string",
+					"enum": ["Copyleft", "Permissive", "Public Domain", "Viral", "Weak Copyleft"]
+				},
+				{
+					"type": "null"
+				}
+			]
+		}
+	},
+	"required": ["can", "cannot", "must", "short", "spdx", "tags", "title", "type"],
+	"$schema": "https://json-schema.org/draft-07/schema"
+}
