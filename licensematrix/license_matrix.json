@@ -1,0 +1,1188 @@
+{
+	"mit-license": {
+		"title": "MIT License (Expat)",
+		"short": "mit",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Permissive"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Private Use"
+		],
+		"type": "Permissive",
+		"spdx": "mit"
+	},
+	"unlicense": {
+		"title": "Unlicense",
+		"short": "unlicense",
+		"tags": [
+			"Public Domain"
+		],
+		"must": [],
+		"cannot": [
+			"Include Copyright",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Private Use",
+			"Modify"
+		],
+		"type": "Public Domain",
+		"spdx": "Unlicense"
+	},
+	"boost-software-license-1.0-explained": {
+		"title": "Boost Software License 1.0 (BSL-1.0)",
+		"short": "boost",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Permissive"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Permissive",
+		"spdx": "BSL-1.0"
+	},
+	"bsd-2-clause-license-(freebsd)": {
+		"title": "BSD 2-Clause License (FreeBSD/Simplified)",
+		"short": "freebsd",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Permissive"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty"
+		],
+		"type": "Permissive",
+		"spdx": null
+	},
+	"bsd-3-clause-license-(revised)": {
+		"title": "BSD 3-Clause License (Revised)",
+		"short": "bsd3",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Permissive"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty"
+		],
+		"type": "Permissive",
+		"spdx": null
+	},
+	"-isc-license": {
+		"title": " ISC License",
+		"short": "isc",
+		"tags": [
+			"Permissive",
+			"OSI-Approved",
+			"Open Source"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Permissive",
+		"spdx": "Rdisc"
+	},
+	"university-of-illinois---ncsa-open-source-license-(ncsa)": {
+		"title": "University of Illinois - NCSA Open Source License (NCSA)",
+		"short": "ncsa",
+		"tags": [
+			"Permissive"
+		],
+		"must": [
+			"Include License"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Permissive",
+		"spdx": "NCSA"
+	},
+	"python-license-2.0": {
+		"title": "Python License 2.0",
+		"short": "python2",
+		"tags": [],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": "Python-2.0"
+	},
+	"apache-license-2.0-(apache-2.0)": {
+		"title": "Apache License 2.0 (Apache-2.0)",
+		"short": "apache2",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Permissive"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes",
+			"Include Notice"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Private Use",
+			"Use Patent Claims",
+			"Place Warranty"
+		],
+		"type": "Permissive",
+		"spdx": null
+	},
+	"eclipse-public-license-1.0-(epl-1.0)": {
+		"title": "Eclipse Public License 1.0 (EPL-1.0)",
+		"short": "epl",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Copyleft"
+		],
+		"must": [
+			"Include License",
+			"Disclose Source",
+			"Include Copyright",
+			"Compensate for Damages",
+			"Include Install Instructions",
+			"Include Original"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Use Patent Claims",
+			"Private Use"
+		],
+		"type": "Copyleft",
+		"spdx": "EPL-2.0"
+	},
+	"academic-free-license-3.0-(afl)": {
+		"title": "Academic Free License 3.0 (AFL)",
+		"short": "afl3",
+		"tags": [
+			"Open Source",
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Original",
+			"Disclose Source",
+			"Include Copyright"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense"
+		],
+		"type": "Copyleft",
+		"spdx": "AFL-3.0"
+	},
+	"gnu-lesser-general-public-license-v3-(lgpl-3)": {
+		"title": "GNU Lesser General Public License v3 (LGPL-3.0)",
+		"short": "lgpl-3.0",
+		"tags": [
+			"OSI-Approved",
+			"GNU",
+			"Copyleft",
+			"Weak Copyleft",
+			"Open Source"
+		],
+		"must": [
+			"Include Original",
+			"State Changes",
+			"Disclose Source",
+			"Include License",
+			"Include Copyright",
+			"Include Install Instructions"
+		],
+		"cannot": [
+			"Sublicense",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty",
+			"Use Patent Claims"
+		],
+		"type": "Copyleft",
+		"spdx": "LGPL-3.0-or-later"
+	},
+	"gnu-lesser-general-public-license-v2.1-(lgpl-2.1)": {
+		"title": "GNU Lesser General Public License v2.1 (LGPL-2.1) ",
+		"short": "lgpl2",
+		"tags": [
+			"GNU",
+			"OSI-Approved",
+			"Weak Copyleft"
+		],
+		"must": [
+			"Include Original",
+			"Include Copyright",
+			"Include License",
+			"Disclose Source",
+			"State Changes",
+			"Include Notice"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Sublicense"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Weak Copyleft",
+		"spdx": "LGPL-3.0-only"
+	},
+	"gnu-general-public-license-v3-(gpl-3)": {
+		"title": "GNU General Public License v3 (GPL-3)",
+		"short": "gpl-3.0",
+		"tags": [
+			"Copyleft",
+			"GNU",
+			"OSI-Approved",
+			"Open Source"
+		],
+		"must": [
+			"Include Original",
+			"State Changes",
+			"Disclose Source",
+			"Include License",
+			"Include Copyright",
+			"Include Install Instructions"
+		],
+		"cannot": [
+			"Sublicense",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty",
+			"Use Patent Claims"
+		],
+		"type": "Copyleft",
+		"spdx": "GPL-3.0-or-later"
+	},
+	"gnu-general-public-license-v2": {
+		"title": "GNU General Public License v2.0 (GPL-2.0)",
+		"short": "gpl2",
+		"tags": [
+			"Open Source",
+			"Copyleft",
+			"Viral",
+			"GNU",
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Original",
+			"Disclose Source",
+			"Include Copyright",
+			"State Changes",
+			"Include License"
+		],
+		"cannot": [
+			"Sublicense",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty"
+		],
+		"type": "Viral",
+		"spdx": "NGPL"
+	},
+	"gnu-affero-general-public-license-v3-(agpl-3.0)": {
+		"title": "GNU Affero General Public License v3 (AGPL-3.0)",
+		"short": "agpl3",
+		"tags": [
+			"GNU",
+			"OSI-Approved",
+			"Copyleft"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes",
+			"Disclose Source",
+			"Include Install Instructions"
+		],
+		"cannot": [
+			"Sublicense",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Place Warranty"
+		],
+		"type": "Copyleft",
+		"spdx": "AGPL-3.0-or-later"
+	},
+	"mozilla-public-license-2.0-(mpl-2)": {
+		"title": "Mozilla Public License 2.0 (MPL-2.0)",
+		"short": "mpl-2.0",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Copyleft"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"Disclose Source",
+			"Include Original"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Place Warranty",
+			"Use Patent Claims"
+		],
+		"type": "Copyleft",
+		"spdx": "MPL-2.0"
+	},
+	"european-union-public-licence": {
+		"title": "European Union Public License 1.1 (EUPL-1.1)",
+		"short": "eupl-1.1",
+		"tags": [],
+		"must": [
+			"Include License",
+			"Include Copyright",
+			"Disclose Source",
+			"State Changes"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Private Use",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": "EUPL-1.2"
+	},
+	"zope-public-license-2.1-(zpl-2.1)": {
+		"title": "Zope Public License 2.1 (ZPL-2.1)",
+		"short": "zope-public-license-2.1-(zpl-2.1)",
+		"tags": [],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use"
+		],
+		"type": null,
+		"spdx": "ZPL-2.1"
+	},
+	"do-wtf-you-want-to-public-license-v2-(wtfpl-2.0)": {
+		"title": "Do What The F*ck You Want To Public License v2 (WTFPL-2.0)",
+		"short": "wtfpl",
+		"tags": [
+			"Public Domain"
+		],
+		"must": [],
+		"cannot": [],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Include Copyright",
+			"Include Original",
+			"Include License",
+			"Private Use"
+		],
+		"type": "Permissive",
+		"spdx": null
+	},
+	"creative-commons-cc0-1.0-universal": {
+		"title": "Creative Commons CC0 1.0 Universal (CC-0)",
+		"short": "cc0-1.0",
+		"tags": [
+			"Creative Commons",
+			"Public Domain"
+		],
+		"must": [],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable",
+			"Use Patent Claims"
+		],
+		"can": [
+			"Commercial Use",
+			"Private Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Public Domain",
+		"spdx": "CC0-1.0"
+	},
+	"aladdin-free-public-license": {
+		"title": "Aladdin Free Public License",
+		"short": "aladdin",
+		"tags": [],
+		"must": [
+			"Include License",
+			"Include Original",
+			"State Changes"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Sublicense",
+			"Place Warranty",
+			"Commercial Use"
+		],
+		"can": [
+			"Modify",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": "Aladdin"
+	},
+	"cecill-v2": {
+		"title": "CeCILL Free Software License Agreement v2.0 (CECILL-2.0)",
+		"short": "cecill-v2",
+		"tags": [],
+		"must": [
+			"Disclose Source",
+			"Include License",
+			"Include Notice",
+			"Include Copyright",
+			"State Changes"
+		],
+		"cannot": [],
+		"can": [
+			"Modify",
+			"Distribute",
+			"Commercial Use",
+			"Hold Liable"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"zlib-libpng-license-(zlib)": {
+		"title": "Zlib-Libpng License (Zlib)",
+		"short": "zlib",
+		"tags": [],
+		"must": [
+			"Include Copyright",
+			"Rename"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": "Permissive",
+		"spdx": null
+	},
+	"eiffel-forum-license-v2.0-(efl-2.0)": {
+		"title": "Eiffel Forum License v2.0 (EFL-2.0)",
+		"short": "eiffel-forum-license-v2.0-(efl-2.0)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense",
+			"Relicense"
+		],
+		"type": "Permissive",
+		"spdx": "EFL-2.0"
+	},
+	"open-font-license-(ofl)-explained": {
+		"title": "SIL Open Font License v1.1 (OFL-1.1)",
+		"short": "ofl",
+		"tags": [],
+		"must": [
+			"Include License",
+			"Rename"
+		],
+		"cannot": [
+			"Sublicense",
+			"Use Trademark"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"netscape-public-license-v1.1-(npl-1.1)": {
+		"title": "Netscape Public License v1.1 (NPL-1.1)",
+		"short": "netscape-public-license-v1.1-(npl-1.1)",
+		"tags": [],
+		"must": [
+			"Include License",
+			"Include Copyright",
+			"State Changes",
+			"Disclose Source",
+			"Include Notice",
+			"Give Credit"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense",
+			"Place Warranty"
+		],
+		"type": null,
+		"spdx": "NPL-1.1"
+	},
+	"nokia-open-source-license-(nokia-open-source-license)": {
+		"title": "Nokia Open Source License (Nokia Open Source License)",
+		"short": "nokia-open-source-license-(nokia-open-source-license)",
+		"tags": [
+			"OSI-Approved",
+			"Weak Copyleft"
+		],
+		"must": [
+			"Include License",
+			"Include Copyright",
+			"State Changes",
+			"Disclose Source",
+			"Include Notice",
+			"Give Credit"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense",
+			"Place Warranty"
+		],
+		"type": "Weak Copyleft",
+		"spdx": null
+	},
+	"apple-public-source-license-2.0-(apsl)": {
+		"title": "Apple Public Source License 2.0 (APSL)",
+		"short": "aspl2",
+		"tags": [
+			"Open Source",
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes",
+			"Disclose Source"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Place Warranty"
+		],
+		"type": null,
+		"spdx": "APSL-2.0"
+	},
+	"artistic-license-2.0-(artistic)": {
+		"title": "Artistic License 2.0 (Artistic-2.0)",
+		"short": "artistic",
+		"tags": [
+			"Open Source",
+			"OSI-Approved"
+		],
+		"must": [
+			"Rename",
+			"State Changes",
+			"Include Original",
+			"Include Install Instructions"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Private Use"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"attribution-assurance-license-(aal)": {
+		"title": "Attribution Assurance License (AAL)",
+		"short": "attribution-assurance-license-(aal)",
+		"tags": [
+			"OSI-Approved",
+			"Open Source"
+		],
+		"must": [
+			"Include License",
+			"Give Credit"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Modify",
+			"Distribute",
+			"Commercial Use"
+		],
+		"type": null,
+		"spdx": "AAL"
+	},
+	"common-development-and-distribution-license-(cddl-1.0)-explained": {
+		"title": "Common Development and Distribution License (CDDL-1.0)",
+		"short": "cddl",
+		"tags": [
+			"Open Source",
+			"OSI-Approved",
+			"Weak Copyleft"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"Disclose Source"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Place Warranty",
+			"Use Patent Claims"
+		],
+		"type": "Copyleft",
+		"spdx": "CDDL-1.1"
+	},
+	"common-public-license-1.0-(cpl-1.0)": {
+		"title": "Common Public License 1.0 (CPL-1.0)",
+		"short": "common-public-license-1.0-(cpl-1.0)",
+		"tags": [
+			"OSI-Approved",
+			"Open Source",
+			"Weak Copyleft"
+		],
+		"must": [
+			"Disclose Source",
+			"Include License",
+			"Include Copyright"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Sublicense",
+			"Commercial Use",
+			"Use Patent Claims"
+		],
+		"type": "Copyleft",
+		"spdx": "CPL-1.0"
+	},
+	"historic-permission-notice-and-disclaimer-(hpnd)": {
+		"title": "Historic Permission Notice and Disclaimer (HPND)",
+		"short": "historic-permission-notice-and-disclaimer-(hpnd)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include License",
+			"Include Notice"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Modify",
+			"Distribute",
+			"Commercial Use",
+			"Sublicense"
+		],
+		"type": null,
+		"spdx": "HPND-sell-variant"
+	},
+	"ibm-public-license-1.0-(ipl)": {
+		"title": "IBM Public License 1.0 (IPL)",
+		"short": "ipl",
+		"tags": [
+			"Open Source",
+			"OSI-Approved"
+		],
+		"must": [
+			"Include License",
+			"Disclose Source"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense"
+		],
+		"type": null,
+		"spdx": "IPL-1.0"
+	},
+	"intel-open-source-license-(intel)": {
+		"title": "Intel Open Source License (Intel)",
+		"short": "intel-open-source-license-(intel)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Modify",
+			"Distribute",
+			"Commercial Use",
+			"Sublicense"
+		],
+		"type": null,
+		"spdx": "Intel"
+	},
+	"miros-license-(miros)": {
+		"title": "MirOS License (MirOS)",
+		"short": "miros-license-(miros)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"open-group-test-suite-license-(ogtsl)": {
+		"title": "Open Group Test Suite License (OGTSL)",
+		"short": "open-group-test-suite-license-(ogtsl)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"State Changes",
+			"Include Original"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": "OGTSL"
+	},
+	"open-software-license-2.1-(osl-2.1)": {
+		"title": "Open Software License 2.1 (OSL-2.1)",
+		"short": "open-software-license-2.1-(osl-2.1)",
+		"tags": [],
+		"must": [
+			"Disclose Source",
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Sublicense",
+			"Distribute",
+			"Modify",
+			"Commercial Use"
+		],
+		"type": null,
+		"spdx": "OSL-2.1"
+	},
+	"postgresql-license-(postgresql)": {
+		"title": "PostgreSQL License (PostgreSQL)",
+		"short": "postgresql-license-(postgresql)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"q-public-license-1.0-(qpl-1.0)": {
+		"title": "Q Public License 1.0 (QPL-1.0)",
+		"short": "q-public-license-1.0-(qpl-1.0)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"Disclose Source"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Commercial Use"
+		],
+		"can": [
+			"Distribute",
+			"Modify"
+		],
+		"type": null,
+		"spdx": null
+	},
+	"ricoh-source-code-public-license-(rscpl)": {
+		"title": "Ricoh Source Code Public License (RSCPL)",
+		"short": "ricoh-source-code-public-license-(rscpl)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Disclose Source",
+			"Include License",
+			"State Changes"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Sublicense",
+			"Commercial Use"
+		],
+		"type": "Permissive",
+		"spdx": "RSCPL"
+	},
+	"sleepycat-license": {
+		"title": "Sleepycat License",
+		"short": "sleepycat",
+		"tags": [],
+		"must": [
+			"Include Original",
+			"Include License"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute"
+		],
+		"type": null,
+		"spdx": "Sleepycat"
+	},
+	"sun-industry-standards-source-license-v1.2-(sissl-1.2)": {
+		"title": "Sun Industry Standards Source License v1.2 (SISSL-1.2)",
+		"short": "sun-industry-standards-source-license-v1.2-(sissl-1.2)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include License",
+			"Disclose Source"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense",
+			"Place Warranty"
+		],
+		"type": "Copyleft",
+		"spdx": "SISSL-1.2"
+	},
+	"sun-public-license-v1.0-(spl-1.0)": {
+		"title": "Sun Public License v1.0 (SPL-1.0)",
+		"short": "sun-public-license-v1.0-(spl-1.0)",
+		"tags": [
+			"OSI-Approved",
+			"Weak Copyleft"
+		],
+		"must": [
+			"Include License",
+			"Include Copyright",
+			"State Changes",
+			"Disclose Source",
+			"Include Notice",
+			"Give Credit"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense",
+			"Place Warranty"
+		],
+		"type": "Weak Copyleft",
+		"spdx": "SPL-1.0"
+	},
+	"universal-permissive-license-1.0-(upl-1.0)": {
+		"title": "Universal Permissive License 1.0 (UPL-1.0)",
+		"short": "upl-1.0",
+		"tags": [
+			"Open Source",
+			"Permissive",
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Commercial Use",
+			"Modify",
+			"Distribute",
+			"Sublicense",
+			"Private Use",
+			"Use Patent Claims"
+		],
+		"type": "Permissive",
+		"spdx": "UPL-1.0"
+	},
+	"vovida-software-license-v1.0-(vsl-1.0)": {
+		"title": "Vovida Software License v1.0 (VSL-1.0)",
+		"short": "vovida-software-license-v1.0-(vsl-1.0)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License"
+		],
+		"cannot": [
+			"Use Trademark",
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use"
+		],
+		"type": "Permissive",
+		"spdx": "VSL-1.0"
+	},
+	"w3c-software-notice-and-license-(w3c)": {
+		"title": "W3C Software Notice and License (W3C)",
+		"short": "w3c-software-notice-and-license-(w3c)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright",
+			"Include License",
+			"State Changes"
+		],
+		"cannot": [
+			"Hold Liable",
+			"Use Trademark"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use"
+		],
+		"type": "Permissive",
+		"spdx": "W3C-19980720"
+	},
+	"x.net-license-(xnet)": {
+		"title": "X.Net License (Xnet)",
+		"short": "x.net-license-(xnet)",
+		"tags": [
+			"OSI-Approved"
+		],
+		"must": [
+			"Include Copyright"
+		],
+		"cannot": [
+			"Hold Liable"
+		],
+		"can": [
+			"Distribute",
+			"Modify",
+			"Commercial Use",
+			"Sublicense"
+		],
+		"type": "Permissive",
+		"spdx": null
+	}
+}

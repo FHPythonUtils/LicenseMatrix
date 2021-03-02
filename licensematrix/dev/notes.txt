@@ -1,0 +1,154 @@
+
+Top licenses used in python:
+https://snyk.io/blog/over-10-of-python-packages-on-pypi-are-distributed-without-any-license/
+
+Method
+From the author: "First, I collected the metadata of all packages and all of their released
+versions on PyPI. This was done over several days in early August 2018. At the
+time there were nearly 150,000 packages on PyPI."
+
+mit ✅
+bsd2 ✅
+gpl3 ✅
+apache2 ✅
+agpl3 ✅
+lgpl3 ✅
+gpl2 ✅
+bsd3 ✅
+zpl ✅
+isc ✅
+mpl2 ✅
+gpl3+
+psf ✅
+public_domain
+wtfpl ✅
+unlicense ✅
+lgpl2.1 ✅
+lgpl2 ✅
+agpl3+
+cc0_1 ✅
+lgpl3+
+gpl2+
+
+
+List from pypi.org (82) https://pypi.org/classifiers/
+
+License :: Aladdin Free Public License (AFPL) ✅
+License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication ✅
+License :: CeCILL-B Free Software License Agreement (CECILL-B) ✅
+License :: CeCILL-C Free Software License Agreement (CECILL-C)
+License :: DFSG approved
+License :: Eiffel Forum License (EFL) ✅
+License :: Free For Educational Use
+License :: Free For Home Use
+License :: Free To Use But Restricted
+License :: Free for non-commercial use
+License :: Freely Distributable
+License :: Freeware
+License :: GUST Font License 1.0
+License :: GUST Font License 2006-09-30
+License :: Netscape Public License (NPL) ✅
+License :: Nokia Open Source License (NOKOS) ✅
+License :: OSI Approved :: Academic Free License (AFL) ✅
+License :: OSI Approved :: Apache Software License ✅
+License :: OSI Approved :: Apple Public Source License ✅
+License :: OSI Approved :: Artistic License ✅
+License :: OSI Approved :: Attribution Assurance License ✅
+License :: OSI Approved :: BSD License ✅
+License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0) ✅
+License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+License :: OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0) ✅
+License :: OSI Approved :: Common Public License ✅
+License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)
+License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0) ✅
+License :: OSI Approved :: Eiffel Forum License ✅
+License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)
+License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1) ✅
+License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+License :: OSI Approved :: GNU Affero General Public License v3 ✅
+License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+License :: OSI Approved :: GNU Free Documentation License (FDL)
+License :: OSI Approved :: GNU General Public License (GPL)
+License :: OSI Approved :: GNU General Public License v2 (GPLv2) ✅
+License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+License :: OSI Approved :: GNU General Public License v3 (GPLv3) ✅
+License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2) ✅
+License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3) ✅
+License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND) ✅
+License :: OSI Approved :: IBM Public License ✅
+License :: OSI Approved :: ISC License (ISCL) ✅
+License :: OSI Approved :: Intel Open Source License ✅
+License :: OSI Approved :: Jabber Open Source License
+License :: OSI Approved :: MIT License ✅
+License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)
+License :: OSI Approved :: MirOS License (MirOS) ✅
+License :: OSI Approved :: Motosoto License
+License :: OSI Approved :: Mozilla Public License 1.0 (MPL)
+License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)
+License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0) ✅
+License :: OSI Approved :: Nethack General Public License
+License :: OSI Approved :: Nokia Open Source License ✅
+License :: OSI Approved :: Open Group Test Suite License ✅
+License :: OSI Approved :: Open Software License 3.0 (OSL-3.0) ✅
+License :: OSI Approved :: PostgreSQL License ✅
+License :: OSI Approved :: Python License (CNRI Python License)
+License :: OSI Approved :: Python Software Foundation License ✅
+License :: OSI Approved :: Qt Public License (QPL) ✅
+License :: OSI Approved :: Ricoh Source Code Public License ✅
+License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)  ✅
+License :: OSI Approved :: Sleepycat License ✅
+License :: OSI Approved :: Sun Industry Standards Source License (SISSL) ✅
+License :: OSI Approved :: Sun Public License ✅
+License :: OSI Approved :: The Unlicense (Unlicense) ✅
+License :: OSI Approved :: Universal Permissive License (UPL) ✅
+License :: OSI Approved :: University of Illinois/NCSA Open Source License ✅
+License :: OSI Approved :: Vovida Software License 1.0 ✅
+License :: OSI Approved :: W3C License ✅
+License :: OSI Approved :: X.Net License ✅
+License :: OSI Approved :: Zope Public License ✅
+License :: OSI Approved :: zlib/libpng License ✅
+License :: Other/Proprietary License
+License :: Public Domain
+License :: Repoze Public License
+
+
+Existing
+
+# Public domain
+PUBLIC = 0
+UNLICENSE = 1 ✅
+# Permissive GPL compatible
+MIT = 10 ✅
+BOOST = 11 ✅
+BSD = 12 ✅
+ISC = 13 ✅
+NCSA = 14 ✅
+PSFL = 15 ✅
+# Other permissive
+APACHE = 20 ✅
+ECLIPSE = 21 ✅
+ACEDEMIC_FREE = 22 ✅
+# LGPL
+LGPL_X = 30
+LGPL_2 = 31 ✅
+LGPL_3 = 32 ✅
+LGPL_2_PLUS = 33
+LGPL_3_PLUS = 34
+# GPL
+GPL_X = 40
+GPL_2 = 41 ✅
+GPL_3 = 42 ✅
+GPL_2_PLUS = 43
+GPL_3_PLUS = 44
+# AGPL
+AGPL_3_PLUS = 50 ✅
+# Other copyleft
+MPL = 60 ✅
+EU = 61 ✅
+
+# No License
+NO_LICENSE = 200
