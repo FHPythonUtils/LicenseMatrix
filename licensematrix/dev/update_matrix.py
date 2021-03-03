@@ -54,14 +54,20 @@ with open(THISDIR / "licenselist.txt") as licenseList:
 		spdx = None
 		similarity = []
 		for spdxLicense in SPDX:
-			similarity.append((SequenceMatcher(None, data["slug"].replace("-", " "),
-			spdxLicense["name"].lower()).ratio(), spdxLicense["licenseId"]))
+			similarity.append((SequenceMatcher(None,
+			data["slug"].replace("-", " "),
+			spdxLicense["name"].lower()).ratio(),
+			spdxLicense["licenseId"]))
 		spdx = max(similarity, key=itemgetter(0))[1]
 		# Append the license data to the python dict
 		license_mat[data["slug"]] = {
 		"title": data["title"],
 		"short": data["shorthand"] if "shorthand" in data else data["slug"],
-		"tags": tags, "must": must, "cannot": cannot, "can": can, "type": licenseType,
+		"tags": tags,
+		"must": must,
+		"cannot": cannot,
+		"can": can,
+		"type": licenseType,
 		"spdx": spdx}
 		# Give the endpoint a chance to breathe
 		sleep(2)

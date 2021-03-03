@@ -25,7 +25,7 @@ class LicenseMatrix():
 		self.licenses = self.buildLicenses()
 
 	def buildLicenses(self,
-	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]:
+	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]: #yapf: disable
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
@@ -129,8 +129,8 @@ class LicenseMatrix():
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append((SequenceMatcher(None, spdx.lower(),
-			lice.spdx.lower()).ratio(), lice))
+			licenses.append(
+			(SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]
 
 	def closestTitle(self, title: str) -> License:
@@ -144,6 +144,6 @@ class LicenseMatrix():
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append((SequenceMatcher(None, title.lower(),
-			lice.title.lower()).ratio(), lice))
+			licenses.append(
+			(SequenceMatcher(None, title.lower(), lice.title.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]

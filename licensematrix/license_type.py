@@ -15,10 +15,17 @@ class License():
 	Source: represents an existing license
 	Dest: represents a new combined license (possibly for a combined work)
 	"""
-	def __init__(self, name: str = "", title: str = "", shortName: str = "",
-	tags: list[str] | None = None, must: list[str] | None = None, cannot: list[
-	str] | None = None, can: list[str] | None = None, typeIn: str = "",
-	spdx: str = "", fromDict: dict[str, Any] | None = None):
+	def __init__(self,
+	name: str = "",
+	title: str = "",
+	shortName: str = "",
+	tags: list[str] | None = None,
+	must: list[str] | None = None,
+	cannot: list[str] | None = None,
+	can: list[str] | None = None,
+	typeIn: str = "",
+	spdx: str = "",
+	fromDict: dict[str, Any] | None = None):
 		"""Construct License. Create from a dict of 'by hand'.
 
 		Args:
@@ -50,8 +57,8 @@ class License():
 		if fromDict is not None:
 			self.title = fromDict["title"]
 			self.shortName = fromDict["short"]
-			self.tags = list(set([fromDict["type"]] + fromDict["tags"])
-							) if fromDict["type"] is not None else fromDict["tags"]
+			self.tags = list(set([fromDict["type"]]
+			+ fromDict["tags"])) if fromDict["type"] is not None else fromDict["tags"]
 			self.must = fromDict["must"]
 			self.cannot = fromDict["cannot"]
 			self.can = fromDict["can"]
@@ -97,10 +104,14 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(self.name + "+" + rhs.name, self.title + "+" + rhs.title,
-		self.shortName + "+" + rhs.shortName, list(set(self.tags + rhs.tags)),
-		list(set(self.must + rhs.must)), list(set(self.cannot + rhs.cannot)),
-		list(set(self.can + rhs.can)), getMostStrictType(self.type, rhs.type),
+		return License(self.name + "+" + rhs.name,
+		self.title + "+" + rhs.title,
+		self.shortName + "+" + rhs.shortName,
+		list(set(self.tags + rhs.tags)),
+		list(set(self.must + rhs.must)),
+		list(set(self.cannot + rhs.cannot)),
+		list(set(self.can + rhs.can)),
+		getMostStrictType(self.type, rhs.type),
 		mergeSPDX(self.spdx, rhs.spdx))
 
 	def mergeIntoDest(self, dest: License):
@@ -114,11 +125,15 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(dest.name, dest.title, dest.shortName,
-		list(set(self.tags + dest.tags)), list(set(self.must + dest.must)),
-		list(set(self.cannot + dest.cannot)), list(set(self.can + dest.can)),
-		getMostStrictType(self.type, dest.type), mergeSPDX(
-		self.spdx, dest.spdx))
+		return License(dest.name,
+		dest.title,
+		dest.shortName,
+		list(set(self.tags + dest.tags)),
+		list(set(self.must + dest.must)),
+		list(set(self.cannot + dest.cannot)),
+		list(set(self.can + dest.can)),
+		getMostStrictType(self.type, dest.type),
+		mergeSPDX(self.spdx, dest.spdx))
 
 	def naiveCompatSource(self, dest: License) -> bool:
 		"""Check the destination (rhs) is compatible with the source license (self).
@@ -129,8 +144,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		if strict.index(self.type) < strict.index(dest.type):
 			return False
 		if dest.isViral() and not equal(self, dest):
@@ -151,8 +165,7 @@ class License():
 		Returns:
 			bool: are the licenses compatible?
 		"""
-		strict = [
-		"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		# If the source has a more restrictive license then the derivative work
 		# must be relicensed
 		if strict.index(self.type) > strict.index(dest.type):
@@ -177,8 +190,7 @@ def getMostStrictType(typeA: str, typeB: str) -> str:
 	Returns:
 		str: the most 'strict' type
 	"""
-	strict = [
-	"Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+	strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 	if len(typeA) == 0:
 		return typeB
 	if len(typeB) == 0:
