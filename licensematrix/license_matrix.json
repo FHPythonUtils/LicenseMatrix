@@ -4108,7 +4108,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.0"
 	},
 	"LGPL-2.0+": {
@@ -4123,7 +4123,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.0+"
 	},
 	"LGPL-2.0-only": {
@@ -4137,7 +4137,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.0-only"
 	},
 	"LGPL-2.0-or-later": {
@@ -4151,7 +4151,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.0-or-later"
 	},
 	"LGPL-2.1+": {
@@ -4167,7 +4167,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.1+"
 	},
 	"LGPL-2.1-only": {
@@ -4182,7 +4182,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.1-only"
 	},
 	"LGPL-2.1-or-later": {
@@ -4202,7 +4202,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-2.1-or-later"
 	},
 	"LGPL-3.0+": {
@@ -4223,7 +4223,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-3.0+"
 	},
 	"LGPL-3.0-only": {
@@ -4238,7 +4238,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-3.0-only"
 	},
 	"LGPL-3.0-or-later": {
@@ -4253,7 +4253,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Copyleft",
+		"type": "Weak Copyleft",
 		"spdx": "LGPL-3.0-or-later"
 	},
 	"LGPLLR": {
@@ -4265,7 +4265,7 @@
 		"must": null,
 		"cannot": null,
 		"can": null,
-		"type": "Permissive",
+		"type": "Weak Copyleft",
 		"spdx": "LGPLLR"
 	},
 	"LPL-1.0": {

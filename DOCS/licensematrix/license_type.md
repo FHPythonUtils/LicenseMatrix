@@ -16,7 +16,10 @@ Represent a license.
         - [License().mergeBoth](#licensemergeboth)
         - [License().mergeIntoDest](#licensemergeintodest)
         - [License().naiveCompatDest](#licensenaivecompatdest)
+        - [License().naiveCompatDestLinking](#licensenaivecompatdestlinking)
         - [License().naiveCompatSource](#licensenaivecompatsource)
+        - [License().naiveCompatSourceLinking](#licensenaivecompatsourcelinking)
+        - [License().termsCompatible](#licensetermscompatible)
     - [equal](#equal)
     - [getMostStrictType](#getmoststricttype)
     - [mergeSPDX](#mergespdx)
@@ -160,7 +163,7 @@ destination name. Performs no checks on compatibility, this is up to the user.
 
 ### License().naiveCompatDest
 
-[[find in source code]](../../licensematrix/license_type.py#L156)
+[[find in source code]](../../licensematrix/license_type.py#L211)
 
 ```python
 def naiveCompatDest(dest: License) -> bool:
@@ -176,9 +179,29 @@ Check the source (self) is compatible with the destination license (rhs).
 
 - `bool` - are the licenses compatible?
 
+### License().naiveCompatDestLinking
+
+[[find in source code]](../../licensematrix/license_type.py#L190)
+
+```python
+def naiveCompatDestLinking(dest: License) -> bool:
+```
+
+Check the source (self) is compatible with the destination license (rhs).
+
+For linking licenses
+
+#### Arguments
+
+- `dest` *License* - the destination license
+
+#### Returns
+
+- `bool` - are the licenses compatible?
+
 ### License().naiveCompatSource
 
-[[find in source code]](../../licensematrix/license_type.py#L133)
+[[find in source code]](../../licensematrix/license_type.py#L172)
 
 ```python
 def naiveCompatSource(dest: License) -> bool:
@@ -194,9 +217,47 @@ Check the destination (rhs) is compatible with the source license (self).
 
 - `bool` - are the licenses compatible?
 
+### License().naiveCompatSourceLinking
+
+[[find in source code]](../../licensematrix/license_type.py#L151)
+
+```python
+def naiveCompatSourceLinking(dest: License) -> bool:
+```
+
+Check the destination (rhs) is compatible with the source license (self).
+
+For linking licenses
+
+#### Arguments
+
+- `dest` *License* - the destination license
+
+#### Returns
+
+- `bool` - are the licenses compatible?
+
+### License().termsCompatible
+
+[[find in source code]](../../licensematrix/license_type.py#L133)
+
+```python
+def termsCompatible(dest: License) -> bool:
+```
+
+Check the destination terms (rhs) are compatible with the source license terms (self).
+
+#### Arguments
+
+- `dest` *License* - the destination license
+
+#### Returns
+
+- `bool` - are the license terms compatible?
+
 ## equal
 
-[[find in source code]](../../licensematrix/license_type.py#L217)
+[[find in source code]](../../licensematrix/license_type.py#L267)
 
 ```python
 def equal(licenseA: License, licenseB: License) -> bool:
@@ -219,7 +280,7 @@ Are two licenses equal?
 
 ## getMostStrictType
 
-[[find in source code]](../../licensematrix/license_type.py#L182)
+[[find in source code]](../../licensematrix/license_type.py#L232)
 
 ```python
 def getMostStrictType(typeA: str, typeB: str) -> str:
@@ -238,7 +299,7 @@ Return the most 'strict' type of license from the available types.
 
 ## mergeSPDX
 
-[[find in source code]](../../licensematrix/license_type.py#L200)
+[[find in source code]](../../licensematrix/license_type.py#L250)
 
 ```python
 def mergeSPDX(spdxA: str, spdxB: str) -> str:

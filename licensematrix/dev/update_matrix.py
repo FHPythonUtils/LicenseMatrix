@@ -105,6 +105,9 @@ for lice in licenseList:
 			newTags.append(tag_map[tag.strip().replace(",", "")])
 		if "Copyleft" not in newTags:
 			newTags.append("Permissive")
+		typeIn = "Permissive" if "Permissive" in newTags else "Copyleft"
+		if lice[0].lower().startswith("lgpl"):
+			typeIn = "Weak Copyleft"
 		licenseMat[lice[0]] = {
 		"name": lice[1],
 		"altnames": [],
@@ -112,7 +115,7 @@ for lice in licenseList:
 		"must": None,
 		"cannot": None,
 		"can": None,
-		"type": "Permissive" if "Permissive" in newTags else "Copyleft",
+		"type": typeIn,
 		"spdx": lice[0]}
 
 # Enrich with pypi classifiers

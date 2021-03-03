@@ -130,6 +130,45 @@ class License():
 		getMostStrictType(self.type, dest.type),
 		mergeSPDX(self.spdx, dest.spdx))
 
+	def termsCompatible(self, dest: License) -> bool:
+		"""Check the destination terms (rhs) are compatible with the source license terms (self).
+
+		Args:
+			dest (License): the destination license
+
+		Returns:
+			bool: are the license terms compatible?
+		"""
+		# If any of must is under cannot?
+		if self.must is not None and dest.cannot is not None and len(
+		set(self.must).intersection(dest.cannot)) > 0:
+			return False
+		if self.cannot is not None and dest.must is not None and len(
+		set(self.cannot).intersection(dest.must)) > 0:
+			return False
+		return True
+
+	def naiveCompatSourceLinking(self, dest: License) -> bool:
+		"""Check the destination (rhs) is compatible with the source license (self).
+
+		For linking licenses
+
+		Args:
+			dest (License): the destination license
+
+		Returns:
+			bool: are the licenses compatible?
+		"""
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		if strict.index(
+		dest.type) > 2: # if the dest license is Copyleft/ Viral then unlikely
+			return False
+		if dest.isViral() and not equal(self, dest):
+			return False
+		if not self.termsCompatible(dest):
+			return False
+		return True
+
 	def naiveCompatSource(self, dest: License) -> bool:
 		"""Check the destination (rhs) is compatible with the source license (self).
 
@@ -144,12 +183,28 @@ class License():
 			return False
 		if dest.isViral() and not equal(self, dest):
 			return False
-		# If any of must is under cannot?
-		if self.must is not None and dest.cannot is not None and len(
-		set(self.must).intersection(dest.cannot)) > 0:
+		if not self.termsCompatible(dest):
 			return False
-		if self.cannot is not None and dest.must is not None and len(
-		set(self.cannot).intersection(dest.must)) > 0:
+		return True
+
+	def naiveCompatDestLinking(self, dest: License) -> bool:
+		"""Check the source (self) is compatible with the destination license (rhs).
+
+		For linking licenses
+
+		Args:
+			dest (License): the destination license
+
+		Returns:
+			bool: are the licenses compatible?
+		"""
+		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
+		if strict.index(
+		self.type) > 2: # if the dest license is Copyleft/ Viral then unlikely
+			return False
+		if self.isViral() and not equal(self, dest):
+			return False
+		if not self.termsCompatible(dest):
 			return False
 		return True
 
@@ -169,12 +224,7 @@ class License():
 			return False
 		if self.isViral() and not equal(self, dest):
 			return False
-		# If any of must is under cannot?
-		if self.must is not None and dest.cannot is not None and len(
-		set(self.must).intersection(dest.cannot)) > 0:
-			return False
-		if self.cannot is not None and dest.must is not None and len(
-		set(self.cannot).intersection(dest.must)) > 0:
+		if not self.termsCompatible(dest):
 			return False
 		return True
 
