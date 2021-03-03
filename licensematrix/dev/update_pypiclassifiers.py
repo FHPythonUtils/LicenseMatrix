@@ -33,6 +33,10 @@ with open(THISDIR / "pypiclassifiers.txt") as licenseList:
 		spdx = None
 		similarity = []
 		parts = line.lower().split(" :: ")
+		r = regex.compile(r".*?\((.*?)\)")
+		pypiShortName = r.findall(parts[-1])
+		altNames = [parts[-1]] + ([" :: ".join(parts[1:])] if len(parts) > 2 else
+		[]) + ([pypiShortName[0]] if len(pypiShortName) > 0 else [])
 		for spdxLicense in SPDX:
 			similarity.append((SequenceMatcher(None,
 			parts[-1],
@@ -41,15 +45,10 @@ with open(THISDIR / "pypiclassifiers.txt") as licenseList:
 		spdx = max(similarity, key=itemgetter(0))[1]
 		# Append the license data to the python dict
 		if spdx in classifiers: # If this happens then manual checking required
-			classifiers[spdx + "CHK"] = classifiers[spdx]
-			classifiers[spdx + "CHK"]["altnames"].extend([parts[-1]]
-			+ ([" :: ".join(parts[1:])] if len(parts) > 2 else []))
+			classifiers[spdx + "_CHK"] = classifiers[spdx]
+			classifiers[spdx + "_CHK"]["altnames"].extend(altNames)
 			classifiers.pop(spdx)
 		else:
-			classifiers[spdx] = {
-			"spdx": spdx,
-			"name": line,
-			"altnames": [parts[-1]] +
-			([" :: ".join(parts[1:])] if len(parts) > 2 else [])}
+			classifiers[spdx] = {"spdx": spdx, "name": line, "altnames": altNames}
 
 json.dump(classifiers, open(THISDIR / "pypi_classifiers.json", "w"))
