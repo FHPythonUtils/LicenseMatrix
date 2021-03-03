@@ -5,7 +5,6 @@ from __future__ import annotations
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
-from typing import Optional
 
 from .license_type import License
 
@@ -74,7 +73,7 @@ class LicenseMatrix():
 				licenses.append(License(lice, fromDict=matrixDict[lice]))
 		return licenses
 
-	def licenseFormSPDX(self, spdx: str) -> Optional[License]:
+	def licenseFormSPDX(self, spdx: str) -> License | None:
 		"""Get the license from a spdx id.
 
 		Args:
@@ -88,7 +87,7 @@ class LicenseMatrix():
 				return lice
 		return None
 
-	def licenseFromTitle(self, title: str) -> Optional[License]:
+	def licenseFromTitle(self, title: str) -> License | None:
 		"""Get the license from a title.
 
 		Args:
