@@ -1,4 +1,12 @@
 {
+	"Apache-2.0": {
+		"spdx": "Apache-2.0",
+		"name": "License :: OSI Approved :: Apache Software License",
+		"altnames": [
+			"OSI Approved :: Apache Software License",
+			"Apache Software License"
+		]
+	},
 	"Aladdin": {
 		"spdx": "Aladdin",
 		"name": "License :: Aladdin Free Public License (AFPL)",

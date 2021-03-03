@@ -224,7 +224,10 @@
 		"name": "Apache License 2.0 (Apache-2.0)",
 		"altnames": [
 			"apache-license-2.0-(apache-2.0)",
-			"apache2"
+			"apache2",
+			"OSI Approved :: Apache Software License",
+			"Apache Software License",
+			"License :: OSI Approved :: Apache Software License"
 		],
 		"tags": [
 			"Open Source",
@@ -1852,19 +1855,6 @@
 		"type": "Permissive",
 		"spdx": "BSD-1-Clause"
 	},
-	"BSD-2-Clause": {
-		"name": "BSD 2-Clause \"Simplified\" License",
-		"altnames": [],
-		"tags": [
-			"OSI-Approved",
-			"Permissive"
-		],
-		"must": null,
-		"cannot": null,
-		"can": null,
-		"type": "Permissive",
-		"spdx": "BSD-2-Clause"
-	},
 	"BSD-2-Clause-FreeBSD": {
 		"name": "BSD 2-Clause FreeBSD License",
 		"altnames": [],
@@ -1916,20 +1906,6 @@
 		"can": null,
 		"type": "Permissive",
 		"spdx": "BSD-2-Clause-Views"
-	},
-	"BSD-3-Clause": {
-		"name": "BSD 3-Clause \"New\" or \"Revised\" License",
-		"altnames": [],
-		"tags": [
-			"OSI-Approved",
-			"FSF-Libre",
-			"Permissive"
-		],
-		"must": null,
-		"cannot": null,
-		"can": null,
-		"type": "Permissive",
-		"spdx": "BSD-3-Clause"
 	},
 	"BSD-3-Clause-Attribution": {
 		"name": "BSD with attribution",

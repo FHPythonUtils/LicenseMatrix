@@ -91,7 +91,7 @@ class LicenseMatrix():
 			Optional[License]: license
 		"""
 		for lice in self.licenses:
-			if spdx == lice.spdx.lower():
+			if spdx.lower() == lice.spdx.lower():
 				return lice
 		return None
 
@@ -105,7 +105,7 @@ class LicenseMatrix():
 			Optional[License]: license
 		"""
 		for lice in self.licenses:
-			if name == lice.name:
+			if name.lower() == lice.name.lower():
 				return lice
 		return None
 
@@ -119,8 +119,9 @@ class LicenseMatrix():
 			Optional[License]: license
 		"""
 		for lice in self.licenses:
-			if altName in lice.altNames:
-				return lice
+			for name in lice.altNames:
+				if altName.lower() == name.lower():
+					return lice
 		return None
 
 	def searchLicenses(self, search: str) -> list[License]:

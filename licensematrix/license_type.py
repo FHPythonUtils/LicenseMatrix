@@ -145,9 +145,11 @@ class License():
 		if dest.isViral() and not equal(self, dest):
 			return False
 		# If any of must is under cannot?
-		if len(set(self.must).intersection(dest.cannot)) > 0:
+		if self.must is not None and dest.cannot is not None and len(
+		set(self.must).intersection(dest.cannot)) > 0:
 			return False
-		if len(set(self.cannot).intersection(dest.must)) > 0:
+		if self.cannot is not None and dest.must is not None and len(
+		set(self.cannot).intersection(dest.must)) > 0:
 			return False
 		return True
 
@@ -168,9 +170,11 @@ class License():
 		if self.isViral() and not equal(self, dest):
 			return False
 		# If any of must is under cannot?
-		if len(set(self.must).intersection(dest.cannot)) > 0:
+		if self.must is not None and dest.cannot is not None and len(
+		set(self.must).intersection(dest.cannot)) > 0:
 			return False
-		if len(set(self.cannot).intersection(dest.must)) > 0:
+		if self.cannot is not None and dest.must is not None and len(
+		set(self.cannot).intersection(dest.must)) > 0:
 			return False
 		return True
 

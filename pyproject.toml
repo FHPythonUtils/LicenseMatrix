@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "licensematrix"
-version = "2021.1"
+version = "2021.1.2"
 description = "List of popular open source licenses with naive functions to determine compatibility and search for a license from a string"
 authors = ["FredHappyface"]
 classifiers = [

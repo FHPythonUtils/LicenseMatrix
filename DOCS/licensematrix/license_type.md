@@ -160,7 +160,7 @@ destination name. Performs no checks on compatibility, this is up to the user.
 
 ### License().naiveCompatDest
 
-[[find in source code]](../../licensematrix/license_type.py#L154)
+[[find in source code]](../../licensematrix/license_type.py#L156)
 
 ```python
 def naiveCompatDest(dest: License) -> bool:
@@ -196,7 +196,7 @@ Check the destination (rhs) is compatible with the source license (self).
 
 ## equal
 
-[[find in source code]](../../licensematrix/license_type.py#L213)
+[[find in source code]](../../licensematrix/license_type.py#L217)
 
 ```python
 def equal(licenseA: License, licenseB: License) -> bool:
@@ -219,7 +219,7 @@ Are two licenses equal?
 
 ## getMostStrictType
 
-[[find in source code]](../../licensematrix/license_type.py#L178)
+[[find in source code]](../../licensematrix/license_type.py#L182)
 
 ```python
 def getMostStrictType(typeA: str, typeB: str) -> str:
@@ -238,7 +238,7 @@ Return the most 'strict' type of license from the available types.
 
 ## mergeSPDX
 
-[[find in source code]](../../licensematrix/license_type.py#L196)
+[[find in source code]](../../licensematrix/license_type.py#L200)
 
 ```python
 def mergeSPDX(spdxA: str, spdxB: str) -> str:

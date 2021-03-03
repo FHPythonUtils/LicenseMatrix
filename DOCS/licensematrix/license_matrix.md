@@ -83,7 +83,7 @@ Use license_matrix.json (part of the project) by default. Json format is:
 
 ### LicenseMatrix().closestSPDX
 
-[[find in source code]](../../licensematrix/license_matrix.py#L144)
+[[find in source code]](../../licensematrix/license_matrix.py#L145)
 
 ```python
 def closestSPDX(spdx: str) -> License:
@@ -101,7 +101,7 @@ Guarantee a license from a spdx id (may be inaccurate).
 
 ### LicenseMatrix().closestTitle
 
-[[find in source code]](../../licensematrix/license_matrix.py#L159)
+[[find in source code]](../../licensematrix/license_matrix.py#L160)
 
 ```python
 def closestTitle(name: str) -> License:
@@ -173,7 +173,7 @@ Get the license from a spdx id.
 
 ### LicenseMatrix().searchLicenses
 
-[[find in source code]](../../licensematrix/license_matrix.py#L126)
+[[find in source code]](../../licensematrix/license_matrix.py#L127)
 
 ```python
 def searchLicenses(search: str) -> list[License]:

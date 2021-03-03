@@ -58,6 +58,7 @@
 			"boost",
 			"boost software license 1.0 (bsl-1.0)",
 			"osi approved :: boost software license 1.0 (bsl-1.0)",
+			"bsl-1.0",
 			"License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
 		],
 		"tags": [
@@ -80,7 +81,7 @@
 		"type": "Permissive",
 		"spdx": "BSL-1.0"
 	},
-	"BSD-1-Clause_CHK": {
+	"BSD-2-Clause": {
 		"name": "BSD 2-Clause License (FreeBSD/Simplified)",
 		"altnames": [
 			"bsd-2-clause-license-(freebsd)",
@@ -105,9 +106,9 @@
 			"Place Warranty"
 		],
 		"type": "Permissive",
-		"spdx": "BSD-1-Clause"
+		"spdx": "BSD-2-Clause"
 	},
-	"BSD-1-Clause_CHK_DUP": {
+	"BSD-3-Clause": {
 		"name": "BSD 3-Clause License (Revised)",
 		"altnames": [
 			"bsd-3-clause-license-(revised)",
@@ -133,7 +134,7 @@
 			"Place Warranty"
 		],
 		"type": "Permissive",
-		"spdx": "BSD-1-Clause_CHK_DUP"
+		"spdx": "BSD-3-Clause"
 	},
 	"ISC": {
 		"name": " ISC License",
@@ -142,6 +143,7 @@
 			"isc",
 			"isc license (iscl)",
 			"osi approved :: isc license (iscl)",
+			"iscl",
 			"License :: OSI Approved :: ISC License (ISCL)"
 		],
 		"tags": [
@@ -222,7 +224,10 @@
 		"name": "Apache License 2.0 (Apache-2.0)",
 		"altnames": [
 			"apache-license-2.0-(apache-2.0)",
-			"apache2"
+			"apache2",
+			"OSI Approved :: Apache Software License",
+			"Apache Software License",
+			"License :: OSI Approved :: Apache Software License"
 		],
 		"tags": [
 			"Open Source",
@@ -258,6 +263,7 @@
 			"epl",
 			"eclipse public license 1.0 (epl-1.0)",
 			"osi approved :: eclipse public license 1.0 (epl-1.0)",
+			"epl-1.0",
 			"License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)"
 		],
 		"tags": [
@@ -323,6 +329,7 @@
 			"lgpl-3.0",
 			"gnu lesser general public license v3 (lgplv3)",
 			"osi approved :: gnu lesser general public license v3 (lgplv3)",
+			"lgplv3",
 			"License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)"
 		],
 		"tags": [
@@ -361,6 +368,7 @@
 			"lgpl2",
 			"gnu lesser general public license v2 (lgplv2)",
 			"osi approved :: gnu lesser general public license v2 (lgplv2)",
+			"lgplv2",
 			"License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
 		],
 		"tags": [
@@ -395,6 +403,7 @@
 			"gpl-3.0",
 			"gnu general public license v3 (gplv3)",
 			"osi approved :: gnu general public license v3 (gplv3)",
+			"gplv3",
 			"License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
 		],
 		"tags": [
@@ -432,6 +441,7 @@
 			"gpl2",
 			"gnu general public license v2 (gplv2)",
 			"osi approved :: gnu general public license v2 (gplv2)",
+			"gplv2",
 			"License :: OSI Approved :: GNU General Public License v2 (GPLv2)"
 		],
 		"tags": [
@@ -502,6 +512,7 @@
 			"mpl-2.0",
 			"mozilla public license 2.0 (mpl 2.0)",
 			"osi approved :: mozilla public license 2.0 (mpl 2.0)",
+			"mpl 2.0",
 			"License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
 		],
 		"tags": [
@@ -537,6 +548,7 @@
 			"eupl-1.1",
 			"european union public licence 1.0 (eupl 1.0)",
 			"osi approved :: european union public licence 1.0 (eupl 1.0)",
+			"eupl 1.0",
 			"License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)"
 		],
 		"tags": [],
@@ -635,6 +647,7 @@
 			"aladdin-free-public-license",
 			"aladdin",
 			"aladdin free public license (afpl)",
+			"afpl",
 			"License :: Aladdin Free Public License (AFPL)"
 		],
 		"tags": [],
@@ -787,6 +800,7 @@
 		"altnames": [
 			"nokia-open-source-license-(nokia-open-source-license)",
 			"nokia open source license (nokos)",
+			"nokos",
 			"nokia open source license",
 			"osi approved :: nokia open source license",
 			"License :: Nokia Open Source License (NOKOS)"
@@ -913,6 +927,7 @@
 			"freely distributable",
 			"common development and distribution license 1.0 (cddl-1.0)",
 			"osi approved :: common development and distribution license 1.0 (cddl-1.0)",
+			"cddl-1.0",
 			"License :: Freely Distributable"
 		],
 		"tags": [
@@ -977,6 +992,7 @@
 			"historic-permission-notice-and-disclaimer-(hpnd)",
 			"historical permission notice and disclaimer (hpnd)",
 			"osi approved :: historical permission notice and disclaimer (hpnd)",
+			"hpnd",
 			"License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)"
 		],
 		"tags": [
@@ -1060,6 +1076,7 @@
 			"miros-license-(miros)",
 			"miros license (miros)",
 			"osi approved :: miros license (miros)",
+			"miros",
 			"License :: OSI Approved :: MirOS License (MirOS)"
 		],
 		"tags": [
@@ -1164,6 +1181,7 @@
 			"q-public-license-1.0-(qpl-1.0)",
 			"qt public license (qpl)",
 			"osi approved :: qt public license (qpl)",
+			"qpl",
 			"License :: OSI Approved :: Qt Public License (QPL)"
 		],
 		"tags": [
@@ -1246,6 +1264,7 @@
 			"sun-industry-standards-source-license-v1.2-(sissl-1.2)",
 			"sun industry standards source license (sissl)",
 			"osi approved :: sun industry standards source license (sissl)",
+			"sissl",
 			"License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
 		],
 		"tags": [
@@ -1310,6 +1329,7 @@
 			"upl-1.0",
 			"universal permissive license (upl)",
 			"osi approved :: universal permissive license (upl)",
+			"upl",
 			"License :: OSI Approved :: Universal Permissive License (UPL)"
 		],
 		"tags": [
@@ -1443,6 +1463,7 @@
 		"altnames": [
 			"academic free license (afl)",
 			"osi approved :: academic free license (afl)",
+			"afl",
 			"License :: OSI Approved :: Academic Free License (AFL)"
 		],
 		"tags": [
@@ -1559,6 +1580,7 @@
 		"altnames": [
 			"gnu affero general public license v3 or later (agplv3+)",
 			"osi approved :: gnu affero general public license v3 or later (agplv3+)",
+			"agplv3+",
 			"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"
 		],
 		"tags": [
@@ -1833,19 +1855,6 @@
 		"type": "Permissive",
 		"spdx": "BSD-1-Clause"
 	},
-	"BSD-2-Clause": {
-		"name": "BSD 2-Clause \"Simplified\" License",
-		"altnames": [],
-		"tags": [
-			"OSI-Approved",
-			"Permissive"
-		],
-		"must": null,
-		"cannot": null,
-		"can": null,
-		"type": "Permissive",
-		"spdx": "BSD-2-Clause"
-	},
 	"BSD-2-Clause-FreeBSD": {
 		"name": "BSD 2-Clause FreeBSD License",
 		"altnames": [],
@@ -1897,20 +1906,6 @@
 		"can": null,
 		"type": "Permissive",
 		"spdx": "BSD-2-Clause-Views"
-	},
-	"BSD-3-Clause": {
-		"name": "BSD 3-Clause \"New\" or \"Revised\" License",
-		"altnames": [],
-		"tags": [
-			"OSI-Approved",
-			"FSF-Libre",
-			"Permissive"
-		],
-		"must": null,
-		"cannot": null,
-		"can": null,
-		"type": "Permissive",
-		"spdx": "BSD-3-Clause"
 	},
 	"BSD-3-Clause-Attribution": {
 		"name": "BSD with attribution",
@@ -2713,6 +2708,7 @@
 		"name": "CeCILL-B Free Software License Agreement",
 		"altnames": [
 			"cecill-b free software license agreement (cecill-b)",
+			"cecill-b",
 			"License :: CeCILL-B Free Software License Agreement (CECILL-B)"
 		],
 		"tags": [
@@ -2729,6 +2725,7 @@
 		"name": "CeCILL-C Free Software License Agreement",
 		"altnames": [
 			"cecill-c free software license agreement (cecill-c)",
+			"cecill-c",
 			"License :: CeCILL-C Free Software License Agreement (CECILL-C)"
 		],
 		"tags": [
@@ -2818,6 +2815,7 @@
 		"altnames": [
 			"python license (cnri python license)",
 			"osi approved :: python license (cnri python license)",
+			"cnri python license",
 			"License :: OSI Approved :: Python License (CNRI Python License)"
 		],
 		"tags": [
@@ -3045,6 +3043,7 @@
 		"name": "Eiffel Forum License v1.0",
 		"altnames": [
 			"eiffel forum license (efl)",
+			"efl",
 			"eiffel forum license",
 			"osi approved :: eiffel forum license",
 			"License :: Eiffel Forum License (EFL)"
@@ -3076,6 +3075,7 @@
 		"altnames": [
 			"eclipse public license 2.0 (epl-2.0)",
 			"osi approved :: eclipse public license 2.0 (epl-2.0)",
+			"epl-2.0",
 			"License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)"
 		],
 		"tags": [
@@ -3108,8 +3108,10 @@
 		"altnames": [
 			"european union public licence 1.1 (eupl 1.1)",
 			"osi approved :: european union public licence 1.1 (eupl 1.1)",
+			"eupl 1.1",
 			"european union public licence 1.2 (eupl 1.2)",
 			"osi approved :: european union public licence 1.2 (eupl 1.2)",
+			"eupl 1.2",
 			"License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
 		],
 		"tags": [
@@ -3273,6 +3275,7 @@
 		"altnames": [
 			"gnu free documentation license (fdl)",
 			"osi approved :: gnu free documentation license (fdl)",
+			"fdl",
 			"License :: OSI Approved :: GNU Free Documentation License (FDL)"
 		],
 		"tags": [
@@ -3589,6 +3592,7 @@
 		"altnames": [
 			"gnu general public license (gpl)",
 			"osi approved :: gnu general public license (gpl)",
+			"gpl",
 			"License :: OSI Approved :: GNU General Public License (GPL)"
 		],
 		"tags": [
@@ -3647,6 +3651,7 @@
 		"altnames": [
 			"gnu general public license v2 or later (gplv2+)",
 			"osi approved :: gnu general public license v2 or later (gplv2+)",
+			"gplv2+",
 			"License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)"
 		],
 		"tags": [
@@ -3767,6 +3772,7 @@
 		"altnames": [
 			"gnu general public license v3 or later (gplv3+)",
 			"osi approved :: gnu general public license v3 or later (gplv3+)",
+			"gplv3+",
 			"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
 		],
 		"tags": [
@@ -4090,6 +4096,7 @@
 		"altnames": [
 			"gnu library or lesser general public license (lgpl)",
 			"osi approved :: gnu library or lesser general public license (lgpl)",
+			"lgpl",
 			"License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
 		],
 		"tags": [
@@ -4183,6 +4190,7 @@
 		"altnames": [
 			"gnu lesser general public license v2 or later (lgplv2+)",
 			"osi approved :: gnu lesser general public license v2 or later (lgplv2+)",
+			"lgplv2+",
 			"License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)"
 		],
 		"tags": [
@@ -4202,6 +4210,7 @@
 		"altnames": [
 			"gnu lesser general public license v3 or later (lgplv3+)",
 			"osi approved :: gnu lesser general public license v3 or later (lgplv3+)",
+			"lgplv3+",
 			"License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)"
 		],
 		"tags": [
@@ -4514,6 +4523,7 @@
 		"altnames": [
 			"mozilla public license 1.0 (mpl)",
 			"osi approved :: mozilla public license 1.0 (mpl)",
+			"mpl",
 			"License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"
 		],
 		"tags": [
@@ -4531,6 +4541,7 @@
 		"altnames": [
 			"mozilla public license 1.1 (mpl 1.1)",
 			"osi approved :: mozilla public license 1.1 (mpl 1.1)",
+			"mpl 1.1",
 			"License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
 		],
 		"tags": [
@@ -4795,6 +4806,7 @@
 		"name": "Netscape Public License v1.0",
 		"altnames": [
 			"netscape public license (npl)",
+			"npl",
 			"License :: Netscape Public License (NPL)"
 		],
 		"tags": [
@@ -5009,6 +5021,7 @@
 		"altnames": [
 			"sil open font license 1.1 (ofl-1.1)",
 			"osi approved :: sil open font license 1.1 (ofl-1.1)",
+			"ofl-1.1",
 			"License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)"
 		],
 		"tags": [
@@ -5332,6 +5345,7 @@
 		"altnames": [
 			"cea cnrs inria logiciel libre license, version 2.1 (cecill-2.1)",
 			"osi approved :: cea cnrs inria logiciel libre license, version 2.1 (cecill-2.1)",
+			"cecill-2.1",
 			"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"
 		],
 		"tags": [
@@ -5390,6 +5404,7 @@
 		"altnames": [
 			"open software license 3.0 (osl-3.0)",
 			"osi approved :: open software license 3.0 (osl-3.0)",
+			"osl-3.0",
 			"License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)"
 		],
 		"tags": [
@@ -5420,6 +5435,7 @@
 		"name": "ODC Public Domain Dedication & License 1.0",
 		"altnames": [
 			"cc0 1.0 universal (cc0 1.0) public domain dedication",
+			"cc0 1.0",
 			"License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 		],
 		"tags": [
@@ -5585,6 +5601,7 @@
 		"altnames": [
 			"mitre collaborative virtual workspace license (cvw)",
 			"osi approved :: mitre collaborative virtual workspace license (cvw)",
+			"cvw",
 			"License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)"
 		],
 		"tags": [
@@ -6086,6 +6103,7 @@
 		"altnames": [
 			"the unlicense (unlicense)",
 			"osi approved :: the unlicense (unlicense)",
+			"unlicense",
 			"License :: OSI Approved :: The Unlicense (Unlicense)"
 		],
 		"tags": [
