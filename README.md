@@ -14,17 +14,37 @@
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 List of popular open source licenses with naive functions to determine
-compatibility and search for a license from a string
+compatibility and search for a license from a string.
 
-## With Thanks ❤
+Data sourced from tldrlegal.com and EmbarkStudios has been enriched with spdx
+ids and pypi classifier data.
 
-With thanks to https://tldrlegal.com/ for the bulk of the license data.
+## Credits
+
+### tldrlegal.com
+Thanks to https://tldrlegal.com/ for the some of the license data.
 Also check out https://fossa.com/ who provide License Compliance for Business and
 Enterprise.
 
+### EmbarkStudios
+Thanks to EmbarkStudios for an additional info on 400 licenses.
+https://github.com/EmbarkStudios/spdx/blob/d38660119f5abb37dd13a5bfc86966ba68440b59/src/identifiers.rs
+
+### spdx
+Used to enrich with spdx ids
+https://github.com/spdx/license-list-data/blob/master/json/licenses.json
+
+### pypi.org
+Classifiers list
+https://pypi.org/classifiers/
+
 <!-- omit in toc -->
 ## Table of Contents
-- [With Thanks ❤](#with-thanks-)
+- [Credits](#credits)
+	- [tldrlegal.com](#tldrlegalcom)
+	- [EmbarkStudios](#embarkstudios)
+	- [spdx](#spdx)
+	- [pypi.org](#pypiorg)
 - [Documentation](#documentation)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)

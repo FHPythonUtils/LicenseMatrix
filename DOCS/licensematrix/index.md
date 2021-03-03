@@ -4,7 +4,7 @@
 
 Set up matrix on startup.
 
-- [Licensematrix_](../README.md#licensematrix_-index) / [Modules](../README.md#licensematrix_-modules) / licensematrix
+- [Licensematrix](../README.md#licensematrix-index) / [Modules](../README.md#licensematrix-modules) / licensematrix
     - Modules
         - [license_matrix](license_matrix.md#license_matrix)
         - [license_type](license_type.md#license_type)
