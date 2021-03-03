@@ -17,8 +17,7 @@ class License():
 	"""
 	def __init__(self,
 	name: str = "",
-	title: str = "",
-	shortName: str = "",
+	altNames: list[str] | None = None,
 	tags: list[str] | None = None,
 	must: list[str] | None = None,
 	cannot: list[str] | None = None,
@@ -30,8 +29,8 @@ class License():
 
 		Args:
 			name (str, optional): name. Defaults to "".
-			title (str, optional): pretty print name. Defaults to "".
-			shortName (str, optional): short name. Defaults to "".
+			tags (Optional[list[str]], optional): list of alt names.
+			Defaults to None.
 			tags (Optional[list[str]], optional): list of attributes.
 			Defaults to None.
 			must (Optional[list[str]], optional): list of requirements.
@@ -46,8 +45,7 @@ class License():
 			Defaults to None.
 		"""
 		self.name = name
-		self.title = title
-		self.shortName = shortName
+		self.altNames = altNames if altNames is not None else []
 		self.tags = tags if tags is not None else []
 		self.must = must if must is not None else []
 		self.cannot = cannot if cannot is not None else []
@@ -55,8 +53,7 @@ class License():
 		self.type = typeIn
 		self.spdx = spdx
 		if fromDict is not None:
-			self.title = fromDict["title"]
-			self.shortName = fromDict["short"]
+			self.altNames = fromDict["altnames"]
 			self.tags = list(set([fromDict["type"]]
 			+ fromDict["tags"])) if fromDict["type"] is not None else fromDict["tags"]
 			self.must = fromDict["must"]
@@ -71,7 +68,7 @@ class License():
 
 	def __str__(self) -> str:
 		"""To string."""
-		return f"<{self.title} type:{self.type} spdx:{self.spdx}>"
+		return f"<{self.name} type:{self.type} spdx:{self.spdx}>"
 
 	def isPermissive(self):
 		"""Is the License Permissive?"""
@@ -105,8 +102,7 @@ class License():
 			License: the new, combined license
 		"""
 		return License(self.name + "+" + rhs.name,
-		self.title + "+" + rhs.title,
-		self.shortName + "+" + rhs.shortName,
+		self.altNames + rhs.altNames,
 		list(set(self.tags + rhs.tags)),
 		list(set(self.must + rhs.must)),
 		list(set(self.cannot + rhs.cannot)),
@@ -126,8 +122,7 @@ class License():
 			License: the new, combined license
 		"""
 		return License(dest.name,
-		dest.title,
-		dest.shortName,
+		dest.altNames,
 		list(set(self.tags + dest.tags)),
 		list(set(self.must + dest.must)),
 		list(set(self.cannot + dest.cannot)),
@@ -225,5 +220,4 @@ def equal(licenseA: License, licenseB: License) -> bool:
 	Returns:
 		bool: equal?
 	"""
-	return (licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name
-	or licenseA.shortName == licenseB.shortName)
+	return (licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name)

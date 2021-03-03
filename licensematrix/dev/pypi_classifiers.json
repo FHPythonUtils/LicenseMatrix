@@ -1,0 +1,585 @@
+{
+	"Aladdin": {
+		"spdx": "Aladdin",
+		"name": "License :: Aladdin Free Public License (AFPL)",
+		"altnames": [
+			"aladdin free public license (afpl)"
+		]
+	},
+	"PDDL-1.0": {
+		"spdx": "PDDL-1.0",
+		"name": "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+		"altnames": [
+			"cc0 1.0 universal (cc0 1.0) public domain dedication"
+		]
+	},
+	"CECILL-B": {
+		"spdx": "CECILL-B",
+		"name": "License :: CeCILL-B Free Software License Agreement (CECILL-B)",
+		"altnames": [
+			"cecill-b free software license agreement (cecill-b)"
+		]
+	},
+	"CECILL-C": {
+		"spdx": "CECILL-C",
+		"name": "License :: CeCILL-C Free Software License Agreement (CECILL-C)",
+		"altnames": [
+			"cecill-c free software license agreement (cecill-c)"
+		]
+	},
+	"FSFAP": {
+		"spdx": "FSFAP",
+		"name": "License :: DFSG approved",
+		"altnames": [
+			"dfsg approved"
+		]
+	},
+	"ECL-1.0": {
+		"spdx": "ECL-1.0",
+		"name": "License :: Free For Educational Use",
+		"altnames": [
+			"free for educational use"
+		]
+	},
+	"VOSTROM": {
+		"spdx": "VOSTROM",
+		"name": "License :: Free For Home Use",
+		"altnames": [
+			"free for home use"
+		]
+	},
+	"GFDL-1.1-or-later": {
+		"spdx": "GFDL-1.1-or-later",
+		"name": "License :: Free To Use But Restricted",
+		"altnames": [
+			"free to use but restricted"
+		]
+	},
+	"CC-BY-NC-3.0": {
+		"spdx": "CC-BY-NC-3.0",
+		"name": "License :: Free for non-commercial use",
+		"altnames": [
+			"free for non-commercial use"
+		]
+	},
+	"Beerware": {
+		"spdx": "Beerware",
+		"name": "License :: Freeware",
+		"altnames": [
+			"freeware"
+		]
+	},
+	"OFL-1.0": {
+		"spdx": "OFL-1.0",
+		"name": "License :: GUST Font License 1.0",
+		"altnames": [
+			"gust font license 1.0"
+		]
+	},
+	"Python-2.0": {
+		"spdx": "Python-2.0",
+		"name": "osi approved :: python software foundation license",
+		"altnames": [
+			"python software foundation license",
+			"osi approved :: python software foundation license"
+		]
+	},
+	"NPL-1.0": {
+		"spdx": "NPL-1.0",
+		"name": "License :: Netscape Public License (NPL)",
+		"altnames": [
+			"netscape public license (npl)"
+		]
+	},
+	"AFL-1.1": {
+		"spdx": "AFL-1.1",
+		"name": "License :: OSI Approved :: Academic Free License (AFL)",
+		"altnames": [
+			"academic free license (afl)",
+			"osi approved :: academic free license (afl)"
+		]
+	},
+	"APSL-1.0": {
+		"spdx": "APSL-1.0",
+		"name": "License :: OSI Approved :: Apple Public Source License",
+		"altnames": [
+			"apple public source license",
+			"osi approved :: apple public source license"
+		]
+	},
+	"Artistic-1.0": {
+		"spdx": "Artistic-1.0",
+		"name": "License :: OSI Approved :: Artistic License",
+		"altnames": [
+			"artistic license",
+			"osi approved :: artistic license"
+		]
+	},
+	"AAL": {
+		"spdx": "AAL",
+		"name": "License :: OSI Approved :: Attribution Assurance License",
+		"altnames": [
+			"attribution assurance license",
+			"osi approved :: attribution assurance license"
+		]
+	},
+	"DSDP": {
+		"spdx": "DSDP",
+		"name": "License :: OSI Approved :: BSD License",
+		"altnames": [
+			"bsd license",
+			"osi approved :: bsd license"
+		]
+	},
+	"BSL-1.0": {
+		"spdx": "BSL-1.0",
+		"name": "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+		"altnames": [
+			"boost software license 1.0 (bsl-1.0)",
+			"osi approved :: boost software license 1.0 (bsl-1.0)"
+		]
+	},
+	"OSET-PL-2.1": {
+		"spdx": "OSET-PL-2.1",
+		"name": "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+		"altnames": [
+			"cea cnrs inria logiciel libre license, version 2.1 (cecill-2.1)",
+			"osi approved :: cea cnrs inria logiciel libre license, version 2.1 (cecill-2.1)"
+		]
+	},
+	"CDDL-1.0": {
+		"spdx": "CDDL-1.0",
+		"name": "License :: Freely Distributable",
+		"altnames": [
+			"freely distributable",
+			"common development and distribution license 1.0 (cddl-1.0)",
+			"osi approved :: common development and distribution license 1.0 (cddl-1.0)"
+		]
+	},
+	"CPL-1.0": {
+		"spdx": "CPL-1.0",
+		"name": "License :: OSI Approved :: Common Public License",
+		"altnames": [
+			"common public license",
+			"osi approved :: common public license"
+		]
+	},
+	"EPL-1.0": {
+		"spdx": "EPL-1.0",
+		"name": "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)",
+		"altnames": [
+			"eclipse public license 1.0 (epl-1.0)",
+			"osi approved :: eclipse public license 1.0 (epl-1.0)"
+		]
+	},
+	"EPL-2.0": {
+		"spdx": "EPL-2.0",
+		"name": "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
+		"altnames": [
+			"eclipse public license 2.0 (epl-2.0)",
+			"osi approved :: eclipse public license 2.0 (epl-2.0)"
+		]
+	},
+	"EFL-1.0": {
+		"spdx": "EFL-1.0",
+		"name": "License :: Eiffel Forum License (EFL)",
+		"altnames": [
+			"eiffel forum license (efl)",
+			"eiffel forum license",
+			"osi approved :: eiffel forum license"
+		]
+	},
+	"EUPL-1.0": {
+		"spdx": "EUPL-1.0",
+		"name": "License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)",
+		"altnames": [
+			"european union public licence 1.0 (eupl 1.0)",
+			"osi approved :: european union public licence 1.0 (eupl 1.0)"
+		]
+	},
+	"EUPL-1.1": {
+		"spdx": "EUPL-1.1",
+		"name": "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+		"altnames": [
+			"european union public licence 1.1 (eupl 1.1)",
+			"osi approved :: european union public licence 1.1 (eupl 1.1)",
+			"european union public licence 1.2 (eupl 1.2)",
+			"osi approved :: european union public licence 1.2 (eupl 1.2)"
+		]
+	},
+	"AGPL-3.0": {
+		"spdx": "AGPL-3.0",
+		"name": "License :: OSI Approved :: GNU Affero General Public License v3",
+		"altnames": [
+			"gnu affero general public license v3",
+			"osi approved :: gnu affero general public license v3"
+		]
+	},
+	"AGPL-3.0-or-later": {
+		"spdx": "AGPL-3.0-or-later",
+		"name": "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+		"altnames": [
+			"gnu affero general public license v3 or later (agplv3+)",
+			"osi approved :: gnu affero general public license v3 or later (agplv3+)"
+		]
+	},
+	"GFDL-1.1": {
+		"spdx": "GFDL-1.1",
+		"name": "License :: OSI Approved :: GNU Free Documentation License (FDL)",
+		"altnames": [
+			"gnu free documentation license (fdl)",
+			"osi approved :: gnu free documentation license (fdl)"
+		]
+	},
+	"GPL-1.0": {
+		"spdx": "GPL-1.0",
+		"name": "License :: OSI Approved :: GNU General Public License (GPL)",
+		"altnames": [
+			"gnu general public license (gpl)",
+			"osi approved :: gnu general public license (gpl)"
+		]
+	},
+	"GPL-2.0": {
+		"spdx": "GPL-2.0",
+		"name": "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+		"altnames": [
+			"gnu general public license v2 (gplv2)",
+			"osi approved :: gnu general public license v2 (gplv2)"
+		]
+	},
+	"GPL-2.0+": {
+		"spdx": "GPL-2.0+",
+		"name": "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+		"altnames": [
+			"gnu general public license v2 or later (gplv2+)",
+			"osi approved :: gnu general public license v2 or later (gplv2+)"
+		]
+	},
+	"GPL-3.0": {
+		"spdx": "GPL-3.0",
+		"name": "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+		"altnames": [
+			"gnu general public license v3 (gplv3)",
+			"osi approved :: gnu general public license v3 (gplv3)"
+		]
+	},
+	"GPL-3.0+": {
+		"spdx": "GPL-3.0+",
+		"name": "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+		"altnames": [
+			"gnu general public license v3 or later (gplv3+)",
+			"osi approved :: gnu general public license v3 or later (gplv3+)"
+		]
+	},
+	"LGPL-2.1": {
+		"spdx": "LGPL-2.1",
+		"name": "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+		"altnames": [
+			"gnu lesser general public license v2 (lgplv2)",
+			"osi approved :: gnu lesser general public license v2 (lgplv2)"
+		]
+	},
+	"LGPL-2.1-or-later": {
+		"spdx": "LGPL-2.1-or-later",
+		"name": "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+		"altnames": [
+			"gnu lesser general public license v2 or later (lgplv2+)",
+			"osi approved :: gnu lesser general public license v2 or later (lgplv2+)"
+		]
+	},
+	"LGPL-3.0": {
+		"spdx": "LGPL-3.0",
+		"name": "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+		"altnames": [
+			"gnu lesser general public license v3 (lgplv3)",
+			"osi approved :: gnu lesser general public license v3 (lgplv3)"
+		]
+	},
+	"LGPL-3.0+": {
+		"spdx": "LGPL-3.0+",
+		"name": "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+		"altnames": [
+			"gnu lesser general public license v3 or later (lgplv3+)",
+			"osi approved :: gnu lesser general public license v3 or later (lgplv3+)"
+		]
+	},
+	"LGPL-2.0": {
+		"spdx": "LGPL-2.0",
+		"name": "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+		"altnames": [
+			"gnu library or lesser general public license (lgpl)",
+			"osi approved :: gnu library or lesser general public license (lgpl)"
+		]
+	},
+	"HPND": {
+		"spdx": "HPND",
+		"name": "License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)",
+		"altnames": [
+			"historical permission notice and disclaimer (hpnd)",
+			"osi approved :: historical permission notice and disclaimer (hpnd)"
+		]
+	},
+	"IPL-1.0": {
+		"spdx": "IPL-1.0",
+		"name": "License :: OSI Approved :: IBM Public License",
+		"altnames": [
+			"ibm public license",
+			"osi approved :: ibm public license"
+		]
+	},
+	"ISC": {
+		"spdx": "ISC",
+		"name": "License :: OSI Approved :: ISC License (ISCL)",
+		"altnames": [
+			"isc license (iscl)",
+			"osi approved :: isc license (iscl)"
+		]
+	},
+	"Intel": {
+		"spdx": "Intel",
+		"name": "License :: OSI Approved :: Intel Open Source License",
+		"altnames": [
+			"intel open source license",
+			"osi approved :: intel open source license"
+		]
+	},
+	"TMate": {
+		"spdx": "TMate",
+		"name": "License :: OSI Approved :: Jabber Open Source License",
+		"altnames": [
+			"jabber open source license",
+			"osi approved :: jabber open source license"
+		]
+	},
+	"MIT": {
+		"spdx": "MIT",
+		"name": "License :: OSI Approved :: MIT License",
+		"altnames": [
+			"mit license",
+			"osi approved :: mit license"
+		]
+	},
+	"RPSL-1.0": {
+		"spdx": "RPSL-1.0",
+		"name": "License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)",
+		"altnames": [
+			"mitre collaborative virtual workspace license (cvw)",
+			"osi approved :: mitre collaborative virtual workspace license (cvw)"
+		]
+	},
+	"MirOS": {
+		"spdx": "MirOS",
+		"name": "License :: OSI Approved :: MirOS License (MirOS)",
+		"altnames": [
+			"miros license (miros)",
+			"osi approved :: miros license (miros)"
+		]
+	},
+	"Motosoto": {
+		"spdx": "Motosoto",
+		"name": "License :: OSI Approved :: Motosoto License",
+		"altnames": [
+			"motosoto license",
+			"osi approved :: motosoto license"
+		]
+	},
+	"MPL-1.0": {
+		"spdx": "MPL-1.0",
+		"name": "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
+		"altnames": [
+			"mozilla public license 1.0 (mpl)",
+			"osi approved :: mozilla public license 1.0 (mpl)"
+		]
+	},
+	"MPL-1.1": {
+		"spdx": "MPL-1.1",
+		"name": "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
+		"altnames": [
+			"mozilla public license 1.1 (mpl 1.1)",
+			"osi approved :: mozilla public license 1.1 (mpl 1.1)"
+		]
+	},
+	"MPL-2.0": {
+		"spdx": "MPL-2.0",
+		"name": "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+		"altnames": [
+			"mozilla public license 2.0 (mpl 2.0)",
+			"osi approved :: mozilla public license 2.0 (mpl 2.0)"
+		]
+	},
+	"NGPL": {
+		"spdx": "NGPL",
+		"name": "License :: OSI Approved :: Nethack General Public License",
+		"altnames": [
+			"nethack general public license",
+			"osi approved :: nethack general public license"
+		]
+	},
+	"Nokia": {
+		"spdx": "Nokia",
+		"name": "License :: Nokia Open Source License (NOKOS)",
+		"altnames": [
+			"nokia open source license (nokos)",
+			"nokia open source license",
+			"osi approved :: nokia open source license"
+		]
+	},
+	"OGTSL": {
+		"spdx": "OGTSL",
+		"name": "License :: OSI Approved :: Open Group Test Suite License",
+		"altnames": [
+			"open group test suite license",
+			"osi approved :: open group test suite license"
+		]
+	},
+	"OSL-3.0": {
+		"spdx": "OSL-3.0",
+		"name": "License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)",
+		"altnames": [
+			"open software license 3.0 (osl-3.0)",
+			"osi approved :: open software license 3.0 (osl-3.0)"
+		]
+	},
+	"PostgreSQL": {
+		"spdx": "PostgreSQL",
+		"name": "License :: OSI Approved :: PostgreSQL License",
+		"altnames": [
+			"postgresql license",
+			"osi approved :: postgresql license"
+		]
+	},
+	"CNRI-Python": {
+		"spdx": "CNRI-Python",
+		"name": "License :: OSI Approved :: Python License (CNRI Python License)",
+		"altnames": [
+			"python license (cnri python license)",
+			"osi approved :: python license (cnri python license)"
+		]
+	},
+	"QPL-1.0": {
+		"spdx": "QPL-1.0",
+		"name": "License :: OSI Approved :: Qt Public License (QPL)",
+		"altnames": [
+			"qt public license (qpl)",
+			"osi approved :: qt public license (qpl)"
+		]
+	},
+	"RSCPL": {
+		"spdx": "RSCPL",
+		"name": "License :: OSI Approved :: Ricoh Source Code Public License",
+		"altnames": [
+			"ricoh source code public license",
+			"osi approved :: ricoh source code public license"
+		]
+	},
+	"OFL-1.1": {
+		"spdx": "OFL-1.1",
+		"name": "License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)",
+		"altnames": [
+			"sil open font license 1.1 (ofl-1.1)",
+			"osi approved :: sil open font license 1.1 (ofl-1.1)"
+		]
+	},
+	"Sleepycat": {
+		"spdx": "Sleepycat",
+		"name": "License :: OSI Approved :: Sleepycat License",
+		"altnames": [
+			"sleepycat license",
+			"osi approved :: sleepycat license"
+		]
+	},
+	"SISSL": {
+		"spdx": "SISSL",
+		"name": "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+		"altnames": [
+			"sun industry standards source license (sissl)",
+			"osi approved :: sun industry standards source license (sissl)"
+		]
+	},
+	"SPL-1.0": {
+		"spdx": "SPL-1.0",
+		"name": "License :: OSI Approved :: Sun Public License",
+		"altnames": [
+			"sun public license",
+			"osi approved :: sun public license"
+		]
+	},
+	"Unlicense": {
+		"spdx": "Unlicense",
+		"name": "License :: OSI Approved :: The Unlicense (Unlicense)",
+		"altnames": [
+			"the unlicense (unlicense)",
+			"osi approved :: the unlicense (unlicense)"
+		]
+	},
+	"UPL-1.0": {
+		"spdx": "UPL-1.0",
+		"name": "License :: OSI Approved :: Universal Permissive License (UPL)",
+		"altnames": [
+			"universal permissive license (upl)",
+			"osi approved :: universal permissive license (upl)"
+		]
+	},
+	"NCSA": {
+		"spdx": "NCSA",
+		"name": "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
+		"altnames": [
+			"university of illinois/ncsa open source license",
+			"osi approved :: university of illinois/ncsa open source license"
+		]
+	},
+	"VSL-1.0": {
+		"spdx": "VSL-1.0",
+		"name": "License :: OSI Approved :: Vovida Software License 1.0",
+		"altnames": [
+			"vovida software license 1.0",
+			"osi approved :: vovida software license 1.0"
+		]
+	},
+	"DOC": {
+		"spdx": "DOC",
+		"name": "License :: OSI Approved :: W3C License",
+		"altnames": [
+			"w3c license",
+			"osi approved :: w3c license"
+		]
+	},
+	"Xnet": {
+		"spdx": "Xnet",
+		"name": "License :: OSI Approved :: X.Net License",
+		"altnames": [
+			"x.net license",
+			"osi approved :: x.net license"
+		]
+	},
+	"Libpng": {
+		"spdx": "Libpng",
+		"name": "License :: OSI Approved :: zlib/libpng License",
+		"altnames": [
+			"zlib/libpng license",
+			"osi approved :: zlib/libpng license"
+		]
+	},
+	"FTL": {
+		"spdx": "FTL",
+		"name": "License :: Other/Proprietary License",
+		"altnames": [
+			"other/proprietary license"
+		]
+	},
+	"SAX-PD": {
+		"spdx": "SAX-PD",
+		"name": "License :: Public Domain",
+		"altnames": [
+			"public domain"
+		]
+	},
+	"ZPL-1.1": {
+		"spdx": "ZPL-1.1",
+		"name": "License :: OSI Approved :: Zope Public License",
+		"altnames": [
+			"zope public license",
+			"osi approved :: zope public license"
+		]
+	}
+}

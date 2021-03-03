@@ -9,11 +9,14 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "title": {
+                "name": {
                     "type": "string"
                 },
-                "short": {
-                    "type": "string"
+                "altnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "tags": {
                     "type": "array",
@@ -22,22 +25,43 @@
                     }
                 },
                 "must": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Must"
-                    }
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Must"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "cannot": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Can"
-                    }
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Can"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "can": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Can"
-                    }
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Can"
+                            }
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "type": {
                     "anyOf": [
@@ -54,13 +78,13 @@
                 }
             },
             "required": [
+                "altnames",
                 "can",
                 "cannot",
                 "must",
-                "short",
+                "name",
                 "spdx",
                 "tags",
-                "title",
                 "type"
             ],
             "title": "LicenseValue"
@@ -68,18 +92,18 @@
         "Can": {
             "type": "string",
             "enum": [
-                "Commercial Use",
                 "Modify",
                 "Distribute",
+                "Commercial Use",
                 "Sublicense",
+                "Place Warranty",
                 "Private Use",
                 "Use Patent Claims",
-                "Place Warranty",
+                "Relicense",
                 "Hold Liable",
                 "Include Copyright",
                 "Include Original",
                 "Include License",
-                "Relicense",
                 "Use Trademark"
             ],
             "title": "Can"
@@ -87,15 +111,15 @@
         "Must": {
             "type": "string",
             "enum": [
-                "Include Copyright",
                 "Include License",
+                "Give Credit",
                 "Include Original",
                 "Disclose Source",
+                "Include Copyright",
                 "State Changes",
+                "Include Install Instructions",
                 "Include Notice",
                 "Rename",
-                "Include Install Instructions",
-                "Give Credit",
                 "Compensate for Damages"
             ],
             "title": "Must"
@@ -103,14 +127,16 @@
         "Tag": {
             "type": "string",
             "enum": [
-                "Permissive",
                 "OSI-Approved",
+                "Permissive",
                 "Open Source",
-                "Weak Copyleft",
-                "Creative Commons",
-                "Public Domain",
+                "FSF-Libre",
+                "Deprecated",
                 "Copyleft",
                 "GNU",
+                "Creative Commons",
+                "Public Domain",
+                "Weak Copyleft",
                 "Viral"
             ],
             "title": "Tag"

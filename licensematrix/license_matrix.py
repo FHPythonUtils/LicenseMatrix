@@ -19,6 +19,9 @@ THISDIR = Path(__file__).resolve().parent
 class LicenseMatrix():
 	"""Make a list of Licenses from a json file.
 	"""
+
+	__slots__ = ["licenses"]
+
 	def __init__(self):
 		"""Make a list of Licenses from a json file.
 		"""
@@ -31,33 +34,37 @@ class LicenseMatrix():
 		Use license_matrix.json (part of the project) by default. Json format is:
 
 		```json
-		{
-			"mit-license": {
-				"title": "MIT License (Expat)",
-				"short": "mit",
-				"tags": [
-					"Open Source",
-					"OSI-Approved",
-					"Permissive"
-				],
-				"must": [
-					"Include Copyright",
-					"Include License"
-				],
-				"cannot": [
-					"Hold Liable"
-				],
-				"can": [
-					"Commercial Use",
-					"Modify",
-					"Distribute",
-					"Sublicense",
-					"Private Use"
-				],
-				"type": "Permissive",
-				"spdx": "MIT"
-			},
-		}
+		"MIT": {
+			"name": "MIT License (Expat)",
+			"altnames": [
+				"mit-license",
+				"mit",
+				"mit license",
+				"osi approved :: mit license",
+				"License :: OSI Approved :: MIT License"
+			],
+			"tags": [
+				"Open Source",
+				"OSI-Approved",
+				"Permissive"
+			],
+			"must": [
+				"Include Copyright",
+				"Include License"
+			],
+			"cannot": [
+				"Hold Liable"
+			],
+			"can": [
+				"Commercial Use",
+				"Modify",
+				"Distribute",
+				"Sublicense",
+				"Private Use"
+			],
+			"type": "Permissive",
+			"spdx": "MIT"
+		},
 		```
 
 		Args:
@@ -70,10 +77,11 @@ class LicenseMatrix():
 		with open(fileName, encoding="utf-8") as matrix:
 			matrixDict = json.load(matrix)
 			for lice in matrixDict:
-				licenses.append(License(lice, fromDict=matrixDict[lice]))
+				licenses.append(License(matrixDict[lice]["name"],
+				fromDict=matrixDict[lice]))
 		return licenses
 
-	def licenseFormSPDX(self, spdx: str) -> License | None:
+	def licenseFromSPDX(self, spdx: str) -> License | None:
 		"""Get the license from a spdx id.
 
 		Args:
@@ -83,21 +91,35 @@ class LicenseMatrix():
 			Optional[License]: license
 		"""
 		for lice in self.licenses:
-			if spdx == lice.spdx:
+			if spdx == lice.spdx.lower():
 				return lice
 		return None
 
-	def licenseFromTitle(self, title: str) -> License | None:
-		"""Get the license from a title.
+	def licenseFromName(self, name: str) -> License | None:
+		"""Get the license from a name.
 
 		Args:
-			title (str): title to lookup
+			name (str): name to lookup
 
 		Returns:
 			Optional[License]: license
 		"""
 		for lice in self.licenses:
-			if title == lice.title:
+			if name == lice.name:
+				return lice
+		return None
+
+	def licenseFromAltName(self, altName: str) -> License | None:
+		"""Get the license from an altName.
+
+		Args:
+			altName (str): altName to lookup
+
+		Returns:
+			Optional[License]: license
+		"""
+		for lice in self.licenses:
+			if altName in lice.altNames:
 				return lice
 		return None
 
@@ -113,7 +135,8 @@ class LicenseMatrix():
 		search = search.lower()
 		licenses = []
 		for lice in self.licenses:
-			if (search in lice.name.lower() or search in lice.shortName.lower()
+			if (search in lice.name.lower()
+			or search in "\t".join(lice.altNames).lower()
 			or search in lice.spdx.lower()):
 				licenses.append(lice)
 		return licenses
@@ -133,11 +156,11 @@ class LicenseMatrix():
 			(SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]
 
-	def closestTitle(self, title: str) -> License:
-		"""Guarantee a license from a title (may be inaccurate).
+	def closestTitle(self, name: str) -> License:
+		"""Guarantee a license from a name (may be inaccurate).
 
 		Args:
-			title (str): title to lookup
+			name (str): name to lookup
 
 		Returns:
 			License: license
@@ -145,5 +168,5 @@ class LicenseMatrix():
 		licenses = []
 		for lice in self.licenses:
 			licenses.append(
-			(SequenceMatcher(None, title.lower(), lice.title.lower()).ratio(), lice))
+			(SequenceMatcher(None, name.lower(), lice.name.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]

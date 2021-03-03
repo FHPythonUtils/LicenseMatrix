@@ -160,5 +160,8 @@ https://github.com/EmbarkStudios/spdx/blob/d38660119f5abb37dd13a5bfc86966ba68440
 OpenSUSE have a long list of identifiers
 https://github.com/rpm-software-management/rpmlint/blob/4a5b078a7be613a7c5d3e4e45f084a4a74970533/configs/openSUSE/licenses.toml
 
-Heres a list of 31 licenses
+Here's a list of 31 licenses
 https://github.com/ufal/public-license-selector/blob/97a7af0a7af00829bf43958669c79334cf77015c/src/definitions.coffee
+
+SPDX license data from
+https://github.com/spdx/license-list-data/blob/master/json/licenses.json
