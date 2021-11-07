@@ -9,22 +9,25 @@ from __future__ import annotations
 from typing import Any
 
 
-class License():
+class License:
 	"""Represent a license.
 
 	Source: represents an existing license
 	Dest: represents a new combined license (possibly for a combined work)
 	"""
-	def __init__(self,
-	name: str = "",
-	altNames: list[str] | None = None,
-	tags: list[str] | None = None,
-	must: list[str] | None = None,
-	cannot: list[str] | None = None,
-	can: list[str] | None = None,
-	typeIn: str = "",
-	spdx: str = "",
-	fromDict: dict[str, Any] | None = None):
+
+	def __init__(
+		self,
+		name: str = "",
+		altNames: list[str] | None = None,
+		tags: list[str] | None = None,
+		must: list[str] | None = None,
+		cannot: list[str] | None = None,
+		can: list[str] | None = None,
+		typeIn: str = "",
+		spdx: str = "",
+		fromDict: dict[str, Any] | None = None,
+	):
 		"""Construct License. Create from a dict of 'by hand'.
 
 		Args:
@@ -54,8 +57,11 @@ class License():
 		self.spdx = spdx
 		if fromDict is not None:
 			self.altNames = fromDict["altnames"]
-			self.tags = list(set([fromDict["type"]]
-			+ fromDict["tags"])) if fromDict["type"] is not None else fromDict["tags"]
+			self.tags = (
+				list(set([fromDict["type"]] + fromDict["tags"]))
+				if fromDict["type"] is not None
+				else fromDict["tags"]
+			)
 			self.must = fromDict["must"]
 			self.cannot = fromDict["cannot"]
 			self.can = fromDict["can"]
@@ -101,14 +107,16 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(self.name + "+" + rhs.name,
-		self.altNames + rhs.altNames,
-		list(set(self.tags + rhs.tags)),
-		list(set(self.must + rhs.must)),
-		list(set(self.cannot + rhs.cannot)),
-		list(set(self.can + rhs.can)),
-		getMostStrictType(self.type, rhs.type),
-		mergeSPDX(self.spdx, rhs.spdx))
+		return License(
+			self.name + "+" + rhs.name,
+			self.altNames + rhs.altNames,
+			list(set(self.tags + rhs.tags)),
+			list(set(self.must + rhs.must)),
+			list(set(self.cannot + rhs.cannot)),
+			list(set(self.can + rhs.can)),
+			getMostStrictType(self.type, rhs.type),
+			mergeSPDX(self.spdx, rhs.spdx),
+		)
 
 	def mergeIntoDest(self, dest: License):
 		"""Combine two licenses into one super license, but preserve the...
@@ -121,14 +129,16 @@ class License():
 		Returns:
 			License: the new, combined license
 		"""
-		return License(dest.name,
-		dest.altNames,
-		list(set(self.tags + dest.tags)),
-		list(set(self.must + dest.must)),
-		list(set(self.cannot + dest.cannot)),
-		list(set(self.can + dest.can)),
-		getMostStrictType(self.type, dest.type),
-		mergeSPDX(self.spdx, dest.spdx))
+		return License(
+			dest.name,
+			dest.altNames,
+			list(set(self.tags + dest.tags)),
+			list(set(self.must + dest.must)),
+			list(set(self.cannot + dest.cannot)),
+			list(set(self.can + dest.can)),
+			getMostStrictType(self.type, dest.type),
+			mergeSPDX(self.spdx, dest.spdx),
+		)
 
 	def termsCompatible(self, dest: License) -> bool:
 		"""Check the destination terms (rhs) are compatible with the source license terms (self).
@@ -140,11 +150,17 @@ class License():
 			bool: are the license terms compatible?
 		"""
 		# If any of must is under cannot?
-		if self.must is not None and dest.cannot is not None and len(
-		set(self.must).intersection(dest.cannot)) > 0:
+		if (
+			self.must is not None
+			and dest.cannot is not None
+			and len(set(self.must).intersection(dest.cannot)) > 0
+		):
 			return False
-		if self.cannot is not None and dest.must is not None and len(
-		set(self.cannot).intersection(dest.must)) > 0:
+		if (
+			self.cannot is not None
+			and dest.must is not None
+			and len(set(self.cannot).intersection(dest.must)) > 0
+		):
 			return False
 		return True
 
@@ -160,8 +176,7 @@ class License():
 			bool: are the licenses compatible?
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if strict.index(
-		dest.type) > 2: # if the dest license is Copyleft/ Viral then unlikely
+		if strict.index(dest.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if dest.isViral() and not equal(self, dest):
 			return False
@@ -199,8 +214,7 @@ class License():
 			bool: are the licenses compatible?
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if strict.index(
-		self.type) > 2: # if the dest license is Copyleft/ Viral then unlikely
+		if strict.index(self.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if self.isViral() and not equal(self, dest):
 			return False
@@ -274,4 +288,4 @@ def equal(licenseA: License, licenseB: License) -> bool:
 	Returns:
 		bool: equal?
 	"""
-	return (licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name)
+	return licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name

@@ -40,6 +40,7 @@ https://pypi.org/classifiers/
 
 <!-- omit in toc -->
 ## Table of Contents
+
 - [Credits](#credits)
 	- [tldrlegal.com](#tldrlegalcom)
 	- [EmbarkStudios](#embarkstudios)
@@ -75,6 +76,7 @@ https://pypi.org/classifiers/
 See the [Docs](/DOCS/) for more information.
 
 ## Install With PIP
+
 ```python
 pip install licensematrix
 ```
@@ -82,58 +84,93 @@ pip install licensematrix
 Head to https://pypi.org/project/licensematrix/ for more info
 
 ## Language information
+
 ### Built for
-This program has been written for Python 3 and has been tested with
-Python version 3.9.0 <https://www.python.org/downloads/release/python-380/>.
+This program has been written for Python versions 3.7 - 3.10 and has been tested with both 3.7 and
+3.10
 
 ## Install Python on Windows
+
 ### Chocolatey
+
 ```powershell
 choco install python
 ```
-### Download
-To install Python, go to <https://www.python.org/> and download the latest
+
+### Windows - Python.org
+To install Python, go to https://www.python.org/downloads/windows/ and download the latest
 version.
 
 ## Install Python on Linux
+
 ### Apt
+
 ```bash
-sudo apt install python3.9
+sudo apt install python3.x
 ```
+
+### Dnf
+
+```bash
+sudo dnf install python3.x
+```
+
+## Install Python on MacOS
+
+### Homebrew
+
+```bash
+brew install python@3.x
+```
+
+### MacOS - Python.org
+To install Python, go to https://www.python.org/downloads/macos/ and download the latest
+version.
 
 ## How to run
-### With VSCode
-1. Open the .py file in vscode
-2. Ensure a python 3.9 interpreter is selected (Ctrl+Shift+P > Python:Select
-Interpreter > Python 3.9)
-3. Run by pressing Ctrl+F5 (if you are prompted to install any modules, accept)
-### From the Terminal
-```bash
-./[file].py
-```
+
+### Windows
+
+- Module
+	`py -3.x -m [module]` or `[module]` (if module installs a script)
+
+- File
+	`py -3.x [file]` or `./[file]`
+
+### Linux/ MacOS
+
+- Module
+	`python3.x -m [module]` or `[module]` (if module installs a script)
+
+- File
+	`python3.x [file]` or `./[file]`
 
 ## Download Project
+
 ### Clone
+
 #### Using The Command Line
+
 1. Press the Clone or download button in the top right
 2. Copy the URL (link)
 3. Open the command line and change directory to where you wish to
 clone to
 4. Type 'git clone' followed by URL in step 2
-```bash
-$ git clone https://github.com/FHPythonUtils/LicenseMatrix
-```
+	```bash
+	git clone https://github.com/FHPythonUtils/LicenseMatrix
+	```
 
 More information can be found at
-<https://help.github.com/en/articles/cloning-a-repository>
+https://help.github.com/en/articles/cloning-a-repository
 
 #### Using GitHub Desktop
+
 1. Press the Clone or download button in the top right
 2. Click open in desktop
 3. Choose the path for where you want and click Clone
 
 More information can be found at
-<https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop>
+https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop
 
 ### Download Zip File
 
@@ -142,6 +179,7 @@ More information can be found at
 3. Copy/ move to the desired location
 
 ## Community Files
+
 ### Licence
 MIT License
 Copyright (c) FredHappyface

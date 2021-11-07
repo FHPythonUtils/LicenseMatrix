@@ -27,7 +27,7 @@ Make a list of Licenses from a json file.
 
 ### LicenseMatrix().buildLicenses
 
-[[find in source code]](../../licensematrix/license_matrix.py#L30)
+[[find in source code]](../../licensematrix/license_matrix.py#L28)
 
 ```python
 def buildLicenses(
@@ -83,7 +83,7 @@ Use license_matrix.json (part of the project) by default. Json format is:
 
 ### LicenseMatrix().closestSPDX
 
-[[find in source code]](../../licensematrix/license_matrix.py#L145)
+[[find in source code]](../../licensematrix/license_matrix.py#L143)
 
 ```python
 def closestSPDX(spdx: str) -> License:
@@ -101,7 +101,7 @@ Guarantee a license from a spdx id (may be inaccurate).
 
 ### LicenseMatrix().closestTitle
 
-[[find in source code]](../../licensematrix/license_matrix.py#L160)
+[[find in source code]](../../licensematrix/license_matrix.py#L157)
 
 ```python
 def closestTitle(name: str) -> License:
@@ -119,7 +119,7 @@ Guarantee a license from a name (may be inaccurate).
 
 ### LicenseMatrix().licenseFromAltName
 
-[[find in source code]](../../licensematrix/license_matrix.py#L112)
+[[find in source code]](../../licensematrix/license_matrix.py#L108)
 
 ```python
 def licenseFromAltName(altName: str) -> License | None:
@@ -137,7 +137,7 @@ Get the license from an altName.
 
 ### LicenseMatrix().licenseFromName
 
-[[find in source code]](../../licensematrix/license_matrix.py#L98)
+[[find in source code]](../../licensematrix/license_matrix.py#L94)
 
 ```python
 def licenseFromName(name: str) -> License | None:
@@ -155,7 +155,7 @@ Get the license from a name.
 
 ### LicenseMatrix().licenseFromSPDX
 
-[[find in source code]](../../licensematrix/license_matrix.py#L84)
+[[find in source code]](../../licensematrix/license_matrix.py#L80)
 
 ```python
 def licenseFromSPDX(spdx: str) -> License | None:
@@ -173,7 +173,7 @@ Get the license from a spdx id.
 
 ### LicenseMatrix().searchLicenses
 
-[[find in source code]](../../licensematrix/license_matrix.py#L127)
+[[find in source code]](../../licensematrix/license_matrix.py#L123)
 
 ```python
 def searchLicenses(search: str) -> list[License]:

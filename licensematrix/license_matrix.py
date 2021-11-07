@@ -16,19 +16,16 @@ except ImportError:
 THISDIR = Path(__file__).resolve().parent
 
 
-class LicenseMatrix():
-	"""Make a list of Licenses from a json file.
-	"""
+class LicenseMatrix:
+	"""Make a list of Licenses from a json file."""
 
 	__slots__ = ["licenses"]
 
 	def __init__(self):
-		"""Make a list of Licenses from a json file.
-		"""
+		"""Make a list of Licenses from a json file."""
 		self.licenses = self.buildLicenses()
 
-	def buildLicenses(self,
-	fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]: #yapf: disable
+	def buildLicenses(self, fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]:
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
@@ -77,8 +74,7 @@ class LicenseMatrix():
 		with open(fileName, encoding="utf-8") as matrix:
 			matrixDict = json.load(matrix)
 			for lice in matrixDict:
-				licenses.append(License(matrixDict[lice]["name"],
-				fromDict=matrixDict[lice]))
+				licenses.append(License(matrixDict[lice]["name"], fromDict=matrixDict[lice]))
 		return licenses
 
 	def licenseFromSPDX(self, spdx: str) -> License | None:
@@ -136,9 +132,11 @@ class LicenseMatrix():
 		search = search.lower()
 		licenses = []
 		for lice in self.licenses:
-			if (search in lice.name.lower()
-			or search in "\t".join(lice.altNames).lower()
-			or search in lice.spdx.lower()):
+			if (
+				search in lice.name.lower()
+				or search in "\t".join(lice.altNames).lower()
+				or search in lice.spdx.lower()
+			):
 				licenses.append(lice)
 		return licenses
 
@@ -153,8 +151,7 @@ class LicenseMatrix():
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append(
-			(SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice))
+			licenses.append((SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]
 
 	def closestTitle(self, name: str) -> License:
@@ -168,6 +165,5 @@ class LicenseMatrix():
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append(
-			(SequenceMatcher(None, name.lower(), lice.name.lower()).ratio(), lice))
+			licenses.append((SequenceMatcher(None, name.lower(), lice.name.lower()).ratio(), lice))
 		return max(licenses, key=itemgetter(0))[1]
