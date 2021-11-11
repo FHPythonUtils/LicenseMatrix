@@ -1,4 +1,5 @@
 # Changelog
+
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
@@ -19,7 +20,6 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 - Additional licenses
 - altnames
 - available on pypi
-
 
 ## 2021.0.1 - 2021/03/02
 
