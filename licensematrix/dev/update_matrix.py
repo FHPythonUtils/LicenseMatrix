@@ -1,6 +1,8 @@
 """Update the license_matrix.json using https://tldrlegal.com/ and licenselist.txt.
 """
 
+from __future__ import annotations
+
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path

@@ -1,6 +1,8 @@
 """Update the pypi_classifiers.json.
 """
 
+from __future__ import annotations
+
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
