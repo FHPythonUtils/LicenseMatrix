@@ -3,6 +3,13 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2022 - 2022/04/09
+
+- Removed ujson optional dependency per https://pythonspeed.com/articles/faster-json-library/:
+  tldr it probably won't be significantly faster and may be error prone
+- Removed `regex` dependency as `re` seems to work just fine
+- Move docs
+
 ## 2021.1.5 - 2021/03/03
 
 - pre-commit

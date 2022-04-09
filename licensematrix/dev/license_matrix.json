@@ -4383,7 +4383,7 @@
 		"spdx": "Leptonica"
 	},
 	"LiLiQ-P-1.1": {
-		"name": "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c Permissive version 1.1",
+		"name": "Licence Libre du Qu\u00e9bec \u2013 Permissive version 1.1",
 		"altnames": [],
 		"tags": [
 			"OSI-Approved",
@@ -4396,7 +4396,7 @@
 		"spdx": "LiLiQ-P-1.1"
 	},
 	"LiLiQ-R-1.1": {
-		"name": "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c R\u00c3\u00a9ciprocit\u00c3\u00a9 version 1.1",
+		"name": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 version 1.1",
 		"altnames": [],
 		"tags": [
 			"OSI-Approved",
@@ -4409,7 +4409,7 @@
 		"spdx": "LiLiQ-R-1.1"
 	},
 	"LiLiQ-Rplus-1.1": {
-		"name": "Licence Libre du Qu\u00c3\u00a9bec \u00e2\u20ac\u201c R\u00c3\u00a9ciprocit\u00c3\u00a9 forte version 1.1",
+		"name": "Licence Libre du Qu\u00e9bec \u2013 R\u00e9ciprocit\u00e9 forte version 1.1",
 		"altnames": [],
 		"tags": [
 			"OSI-Approved",

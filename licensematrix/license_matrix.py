@@ -2,16 +2,12 @@
 """
 from __future__ import annotations
 
+import json
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
 
 from .license_type import License
-
-try:
-	import ujson as json
-except ImportError:
-	import json
 
 THISDIR = Path(__file__).resolve().parent
 
@@ -70,12 +66,8 @@ class LicenseMatrix:
 		Returns:
 			list[License]: list of Licenses
 		"""
-		licenses = []
-		with open(fileName, encoding="utf-8") as matrix:
-			matrixDict = json.load(matrix)
-			for lice in matrixDict:
-				licenses.append(License(matrixDict[lice]["name"], fromDict=matrixDict[lice]))
-		return licenses
+		matrixDict = json.loads(Path(fileName).read_text(encoding="utf-8"))
+		return [License(matrixDict[lice]["name"], fromDict=matrixDict[lice]) for lice in matrixDict]
 
 	def licenseFromSPDX(self, spdx: str) -> License | None:
 		"""Get the license from a spdx id.

@@ -1,10 +1,10 @@
-# license_type
+# License Type
 
-> Auto-generated documentation for [licensematrix.license_type](../../licensematrix/license_type.py) module.
+> Auto-generated documentation for [licensematrix.license_type](../../../licensematrix/license_type.py) module.
 
 Represent a license.
 
-- [Licensematrix](../README.md#licensematrix-index) / [Modules](../README.md#licensematrix-modules) / [licensematrix](index.md#licensematrix) / license_type
+- [Licensematrix](../README.md#licensematrix-index) / [Modules](../MODULES.md#licensematrix-modules) / [Licensematrix](index.md#licensematrix) / License Type
     - [License](#license)
         - [License().\_\_repr\_\_](#license__repr__)
         - [License().\_\_str\_\_](#license__str__)
@@ -29,7 +29,7 @@ Dest: represents a new combined license (possibly for a combined work)
 
 ## License
 
-[[find in source code]](../../licensematrix/license_type.py#L12)
+[[find in source code]](../../../licensematrix/license_type.py#L12)
 
 ```python
 class License():
@@ -42,7 +42,7 @@ class License():
         can: list[str] | None = None,
         typeIn: str = '',
         spdx: str = '',
-        fromDict: dict[(str, Any)] | None = None,
+        fromDict: dict[str, Any] | None = None,
     ):
 ```
 
@@ -53,7 +53,7 @@ Dest: represents a new combined license (possibly for a combined work)
 
 ### License().\_\_repr\_\_
 
-[[find in source code]](../../licensematrix/license_type.py#L71)
+[[find in source code]](../../../licensematrix/license_type.py#L71)
 
 ```python
 def __repr__() -> str:
@@ -63,7 +63,7 @@ Get the string representation.
 
 ### License().\_\_str\_\_
 
-[[find in source code]](../../licensematrix/license_type.py#L75)
+[[find in source code]](../../../licensematrix/license_type.py#L75)
 
 ```python
 def __str__() -> str:
@@ -73,7 +73,7 @@ To string.
 
 ### License().isCopyleft
 
-[[find in source code]](../../licensematrix/license_type.py#L87)
+[[find in source code]](../../../licensematrix/license_type.py#L87)
 
 ```python
 def isCopyleft():
@@ -83,7 +83,7 @@ Is the License Copyleft?
 
 ### License().isPermissive
 
-[[find in source code]](../../licensematrix/license_type.py#L79)
+[[find in source code]](../../../licensematrix/license_type.py#L79)
 
 ```python
 def isPermissive():
@@ -93,7 +93,7 @@ Is the License Permissive?
 
 ### License().isPublicDomain
 
-[[find in source code]](../../licensematrix/license_type.py#L95)
+[[find in source code]](../../../licensematrix/license_type.py#L95)
 
 ```python
 def isPublicDomain():
@@ -103,7 +103,7 @@ Is the License Public Domain?
 
 ### License().isViral
 
-[[find in source code]](../../licensematrix/license_type.py#L91)
+[[find in source code]](../../../licensematrix/license_type.py#L91)
 
 ```python
 def isViral():
@@ -113,7 +113,7 @@ Is the License Viral?
 
 ### License().isWeakCopyleft
 
-[[find in source code]](../../licensematrix/license_type.py#L83)
+[[find in source code]](../../../licensematrix/license_type.py#L83)
 
 ```python
 def isWeakCopyleft():
@@ -123,7 +123,7 @@ Is the License Weak Copyleft?
 
 ### License().mergeBoth
 
-[[find in source code]](../../licensematrix/license_type.py#L99)
+[[find in source code]](../../../licensematrix/license_type.py#L99)
 
 ```python
 def mergeBoth(rhs: License):
@@ -143,7 +143,7 @@ Performs no checks on compatibility, this is up to the user.
 
 ### License().mergeIntoDest
 
-[[find in source code]](../../licensematrix/license_type.py#L121)
+[[find in source code]](../../../licensematrix/license_type.py#L121)
 
 ```python
 def mergeIntoDest(dest: License):
@@ -163,7 +163,7 @@ destination name. Performs no checks on compatibility, this is up to the user.
 
 ### License().naiveCompatDest
 
-[[find in source code]](../../licensematrix/license_type.py#L225)
+[[find in source code]](../../../licensematrix/license_type.py#L225)
 
 ```python
 def naiveCompatDest(dest: License) -> bool:
@@ -181,7 +181,7 @@ Check the source (self) is compatible with the destination license (rhs).
 
 ### License().naiveCompatDestLinking
 
-[[find in source code]](../../licensematrix/license_type.py#L205)
+[[find in source code]](../../../licensematrix/license_type.py#L205)
 
 ```python
 def naiveCompatDestLinking(dest: License) -> bool:
@@ -201,7 +201,7 @@ For linking licenses
 
 ### License().naiveCompatSource
 
-[[find in source code]](../../licensematrix/license_type.py#L187)
+[[find in source code]](../../../licensematrix/license_type.py#L187)
 
 ```python
 def naiveCompatSource(dest: License) -> bool:
@@ -219,7 +219,7 @@ Check the destination (rhs) is compatible with the source license (self).
 
 ### License().naiveCompatSourceLinking
 
-[[find in source code]](../../licensematrix/license_type.py#L167)
+[[find in source code]](../../../licensematrix/license_type.py#L167)
 
 ```python
 def naiveCompatSourceLinking(dest: License) -> bool:
@@ -239,7 +239,7 @@ For linking licenses
 
 ### License().termsCompatible
 
-[[find in source code]](../../licensematrix/license_type.py#L143)
+[[find in source code]](../../../licensematrix/license_type.py#L143)
 
 ```python
 def termsCompatible(dest: License) -> bool:
@@ -257,7 +257,7 @@ Check the destination terms (rhs) are compatible with the source license terms (
 
 ## equal
 
-[[find in source code]](../../licensematrix/license_type.py#L281)
+[[find in source code]](../../../licensematrix/license_type.py#L281)
 
 ```python
 def equal(licenseA: License, licenseB: License) -> bool:
@@ -280,7 +280,7 @@ Are two licenses equal?
 
 ## getMostStrictType
 
-[[find in source code]](../../licensematrix/license_type.py#L246)
+[[find in source code]](../../../licensematrix/license_type.py#L246)
 
 ```python
 def getMostStrictType(typeA: str, typeB: str) -> str:
@@ -299,7 +299,7 @@ Return the most 'strict' type of license from the available types.
 
 ## mergeSPDX
 
-[[find in source code]](../../licensematrix/license_type.py#L264)
+[[find in source code]](../../../licensematrix/license_type.py#L264)
 
 ```python
 def mergeSPDX(spdxA: str, spdxB: str) -> str:

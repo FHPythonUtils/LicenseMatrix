@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "licensematrix"
-version = "2021.1.5"
+version = "2022"
 license = "mit"
 description = "List of popular open source licenses with naive functions to determine compatibility and search for a license from a string"
 authors = ["FredHappyface"]
@@ -25,6 +25,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+requests-cache = "^0.9.3"
 
 [tool.black]
 line-length = 100

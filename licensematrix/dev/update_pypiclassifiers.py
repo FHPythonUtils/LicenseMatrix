@@ -3,16 +3,11 @@
 
 from __future__ import annotations
 
+import json
+import re
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
-
-import regex
-
-try:
-	import ujson as json
-except ImportError:
-	import json
 
 # pylint: disable=invalid-name
 
@@ -27,7 +22,7 @@ for line in Path(THISDIR / "pypiclassifiers.txt").read_text(encoding="utf-8").sp
 	spdx = None
 	similarity = []
 	parts = line.lower().split(" :: ")
-	r = regex.compile(r".*?\((.*?)\)")
+	r = re.compile(r".*?\((.*?)\)")
 	pypiShortName = r.findall(parts[-1])
 	altNames = (
 		[parts[-1]]
@@ -50,4 +45,6 @@ for line in Path(THISDIR / "pypiclassifiers.txt").read_text(encoding="utf-8").sp
 	else:
 		classifiers[spdx] = {"spdx": spdx, "name": line, "altnames": altNames}
 
-Path(THISDIR / "pypi_classifiers.json").write_text(json.dumps(classifiers), encoding="utf-8")
+Path(THISDIR / "pypi_classifiers.json").write_text(
+	json.dumps(classifiers, indent="\t"), encoding="utf-8"
+)

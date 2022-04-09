@@ -3,19 +3,15 @@
 
 from __future__ import annotations
 
+import json
+import re
 from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
 from time import sleep
 
-import regex
 import requests
 import requests_cache
-
-try:
-	import ujson as json
-except ImportError:
-	import json
 
 # pylint: disable=invalid-name
 
@@ -31,7 +27,7 @@ licenseMat = {}
 for line in Path(THISDIR / "licenselist.txt").read_text(encoding="utf-8").splitlines(False):
 	# Find the json containing all of the data we need
 	r = requests.get(line.strip())
-	p = regex.compile(r"<a class=\"btn\" href=\"(.*?)\">View as JSON<\/a>", regex.MULTILINE)
+	p = re.compile(r"<a class=\"btn\" href=\"(.*?)\">View as JSON<\/a>", re.MULTILINE)
 	api = p.findall(r.content.decode("utf-8"))
 	# Grab the data (incl. tags)
 	data = requests.get("https://tldrlegal.com/" + api[0]).json()
@@ -85,7 +81,7 @@ for line in Path(THISDIR / "licenselist.txt").read_text(encoding="utf-8").splitl
 	sleep(0)
 
 # Enrich with licenses from embarkStudios
-r = regex.compile(r"\(.*?\"(.*?)\",.*?r#\"(.*?)\"#,(.*?)\),", regex.S)
+r = re.compile(r"\(.*?\"(.*?)\",.*?r#\"(.*?)\"#,(.*?)\),", re.S)
 licenseList = r.findall(Path(THISDIR / "embarkStudios.rb").read_text(encoding="utf-8"))
 
 for lice in licenseList:
@@ -127,4 +123,6 @@ for spdx, value in licenseMat.items():
 		value["altnames"].extend(CLASSIFIERS[spdx]["altnames"] + [CLASSIFIERS[spdx]["name"]])
 
 # Write to file
-Path(THISDIR / "license_matrix.json").write_text(json.dumps(licenseMat), encoding="utf-8")
+Path(THISDIR / "license_matrix.json").write_text(
+	json.dumps(licenseMat, indent="\t"), encoding="utf-8"
+)

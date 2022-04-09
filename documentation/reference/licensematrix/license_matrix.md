@@ -1,10 +1,10 @@
-# license_matrix
+# LicenseMatrix
 
-> Auto-generated documentation for [licensematrix.license_matrix](../../licensematrix/license_matrix.py) module.
+> Auto-generated documentation for [licensematrix.license_matrix](../../../licensematrix/license_matrix.py) module.
 
 Make a list of Licenses from a json file.
 
-- [Licensematrix](../README.md#licensematrix-index) / [Modules](../README.md#licensematrix-modules) / [licensematrix](index.md#licensematrix) / license_matrix
+- [Licensematrix](../README.md#licensematrix-index) / [Modules](../MODULES.md#licensematrix-modules) / [Licensematrix](index.md#licensematrix) / LicenseMatrix
     - [LicenseMatrix](#licensematrix)
         - [LicenseMatrix().buildLicenses](#licensematrixbuildlicenses)
         - [LicenseMatrix().closestSPDX](#licensematrixclosestspdx)
@@ -16,7 +16,7 @@ Make a list of Licenses from a json file.
 
 ## LicenseMatrix
 
-[[find in source code]](../../licensematrix/license_matrix.py#L19)
+[[find in source code]](../../../licensematrix/license_matrix.py#L15)
 
 ```python
 class LicenseMatrix():
@@ -27,7 +27,7 @@ Make a list of Licenses from a json file.
 
 ### LicenseMatrix().buildLicenses
 
-[[find in source code]](../../licensematrix/license_matrix.py#L28)
+[[find in source code]](../../../licensematrix/license_matrix.py#L24)
 
 ```python
 def buildLicenses(
@@ -83,7 +83,7 @@ Use license_matrix.json (part of the project) by default. Json format is:
 
 ### LicenseMatrix().closestSPDX
 
-[[find in source code]](../../licensematrix/license_matrix.py#L143)
+[[find in source code]](../../../licensematrix/license_matrix.py#L135)
 
 ```python
 def closestSPDX(spdx: str) -> License:
@@ -101,7 +101,7 @@ Guarantee a license from a spdx id (may be inaccurate).
 
 ### LicenseMatrix().closestTitle
 
-[[find in source code]](../../licensematrix/license_matrix.py#L157)
+[[find in source code]](../../../licensematrix/license_matrix.py#L149)
 
 ```python
 def closestTitle(name: str) -> License:
@@ -119,7 +119,7 @@ Guarantee a license from a name (may be inaccurate).
 
 ### LicenseMatrix().licenseFromAltName
 
-[[find in source code]](../../licensematrix/license_matrix.py#L108)
+[[find in source code]](../../../licensematrix/license_matrix.py#L100)
 
 ```python
 def licenseFromAltName(altName: str) -> License | None:
@@ -137,7 +137,7 @@ Get the license from an altName.
 
 ### LicenseMatrix().licenseFromName
 
-[[find in source code]](../../licensematrix/license_matrix.py#L94)
+[[find in source code]](../../../licensematrix/license_matrix.py#L86)
 
 ```python
 def licenseFromName(name: str) -> License | None:
@@ -155,7 +155,7 @@ Get the license from a name.
 
 ### LicenseMatrix().licenseFromSPDX
 
-[[find in source code]](../../licensematrix/license_matrix.py#L80)
+[[find in source code]](../../../licensematrix/license_matrix.py#L72)
 
 ```python
 def licenseFromSPDX(spdx: str) -> License | None:
@@ -173,7 +173,7 @@ Get the license from a spdx id.
 
 ### LicenseMatrix().searchLicenses
 
-[[find in source code]](../../licensematrix/license_matrix.py#L123)
+[[find in source code]](../../../licensematrix/license_matrix.py#L115)
 
 ```python
 def searchLicenses(search: str) -> list[License]:
