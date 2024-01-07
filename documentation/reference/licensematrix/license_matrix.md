@@ -26,8 +26,7 @@ Make a list of Licenses from a json file.
 
 ```python
 class LicenseMatrix:
-    def __init__(self):
-        ...
+    def __init__(self): ...
 ```
 
 ### LicenseMatrix().buildLicenses
@@ -85,8 +84,7 @@ Use license_matrix.json (part of the project) by default. Json format is:
 ```python
 def buildLicenses(
     self, fileName: str = str(THISDIR / "license_matrix.json")
-) -> list[License]:
-    ...
+) -> list[License]: ...
 ```
 
 ### LicenseMatrix().closestSPDX
@@ -106,8 +104,7 @@ Guarantee a license from a spdx id (may be inaccurate).
 #### Signature
 
 ```python
-def closestSPDX(self, spdx: str) -> License:
-    ...
+def closestSPDX(self, spdx: str) -> License: ...
 ```
 
 ### LicenseMatrix().closestTitle
@@ -127,8 +124,7 @@ Guarantee a license from a name (may be inaccurate).
 #### Signature
 
 ```python
-def closestTitle(self, name: str) -> License:
-    ...
+def closestTitle(self, name: str) -> License: ...
 ```
 
 ### LicenseMatrix().licenseFromAltName
@@ -148,8 +144,7 @@ Get the license from an altName.
 #### Signature
 
 ```python
-def licenseFromAltName(self, altName: str) -> License | None:
-    ...
+def licenseFromAltName(self, altName: str) -> License | None: ...
 ```
 
 ### LicenseMatrix().licenseFromName
@@ -169,8 +164,7 @@ Get the license from a name.
 #### Signature
 
 ```python
-def licenseFromName(self, name: str) -> License | None:
-    ...
+def licenseFromName(self, name: str) -> License | None: ...
 ```
 
 ### LicenseMatrix().licenseFromSPDX
@@ -190,8 +184,7 @@ Get the license from a spdx id.
 #### Signature
 
 ```python
-def licenseFromSPDX(self, spdx: str) -> License | None:
-    ...
+def licenseFromSPDX(self, spdx: str) -> License | None: ...
 ```
 
 ### LicenseMatrix().searchLicenses
@@ -211,8 +204,5 @@ Get a list of candidate licenses from a search string.
 #### Signature
 
 ```python
-def searchLicenses(self, search: str) -> list[License]:
-    ...
+def searchLicenses(self, search: str) -> list[License]: ...
 ```
-
-

@@ -50,8 +50,7 @@ class License:
         typeIn: str = "",
         spdx: str = "",
         fromDict: dict[str, Any] | None = None,
-    ):
-        ...
+    ): ...
 ```
 
 ### License().__repr__
@@ -63,8 +62,7 @@ Get the string representation.
 #### Signature
 
 ```python
-def __repr__(self) -> str:
-    ...
+def __repr__(self) -> str: ...
 ```
 
 ### License().__str__
@@ -76,8 +74,7 @@ To string.
 #### Signature
 
 ```python
-def __str__(self) -> str:
-    ...
+def __str__(self) -> str: ...
 ```
 
 ### License().isCopyleft
@@ -89,8 +86,7 @@ Is the License Copyleft?
 #### Signature
 
 ```python
-def isCopyleft(self):
-    ...
+def isCopyleft(self): ...
 ```
 
 ### License().isPermissive
@@ -102,8 +98,7 @@ Is the License Permissive?
 #### Signature
 
 ```python
-def isPermissive(self):
-    ...
+def isPermissive(self): ...
 ```
 
 ### License().isPublicDomain
@@ -115,8 +110,7 @@ Is the License Public Domain?
 #### Signature
 
 ```python
-def isPublicDomain(self):
-    ...
+def isPublicDomain(self): ...
 ```
 
 ### License().isViral
@@ -128,8 +122,7 @@ Is the License Viral?
 #### Signature
 
 ```python
-def isViral(self):
-    ...
+def isViral(self): ...
 ```
 
 ### License().isWeakCopyleft
@@ -141,8 +134,7 @@ Is the License Weak Copyleft?
 #### Signature
 
 ```python
-def isWeakCopyleft(self):
-    ...
+def isWeakCopyleft(self): ...
 ```
 
 ### License().mergeBoth
@@ -164,8 +156,7 @@ Performs no checks on compatibility, this is up to the user.
 #### Signature
 
 ```python
-def mergeBoth(self, rhs: License):
-    ...
+def mergeBoth(self, rhs: License): ...
 ```
 
 ### License().mergeIntoDest
@@ -187,8 +178,7 @@ destination name. Performs no checks on compatibility, this is up to the user.
 #### Signature
 
 ```python
-def mergeIntoDest(self, dest: License):
-    ...
+def mergeIntoDest(self, dest: License): ...
 ```
 
 ### License().naiveCompatDest
@@ -208,8 +198,7 @@ Check the source (self) is compatible with the destination license (rhs).
 #### Signature
 
 ```python
-def naiveCompatDest(self, dest: License) -> bool:
-    ...
+def naiveCompatDest(self, dest: License) -> bool: ...
 ```
 
 ### License().naiveCompatDestLinking
@@ -231,8 +220,7 @@ For linking licenses
 #### Signature
 
 ```python
-def naiveCompatDestLinking(self, dest: License) -> bool:
-    ...
+def naiveCompatDestLinking(self, dest: License) -> bool: ...
 ```
 
 ### License().naiveCompatSource
@@ -252,8 +240,7 @@ Check the destination (rhs) is compatible with the source license (self).
 #### Signature
 
 ```python
-def naiveCompatSource(self, dest: License) -> bool:
-    ...
+def naiveCompatSource(self, dest: License) -> bool: ...
 ```
 
 ### License().naiveCompatSourceLinking
@@ -275,8 +262,7 @@ For linking licenses
 #### Signature
 
 ```python
-def naiveCompatSourceLinking(self, dest: License) -> bool:
-    ...
+def naiveCompatSourceLinking(self, dest: License) -> bool: ...
 ```
 
 ### License().termsCompatible
@@ -296,8 +282,7 @@ Check the destination terms (rhs) are compatible with the source license terms (
 #### Signature
 
 ```python
-def termsCompatible(self, dest: License) -> bool:
-    ...
+def termsCompatible(self, dest: License) -> bool: ...
 ```
 
 
@@ -320,8 +305,7 @@ Are two licenses equal?
 #### Signature
 
 ```python
-def equal(licenseA: License, licenseB: License) -> bool:
-    ...
+def equal(licenseA: License, licenseB: License) -> bool: ...
 ```
 
 #### See also
@@ -348,8 +332,7 @@ Return the most 'strict' type of license from the available types.
 #### Signature
 
 ```python
-def getMostStrictType(typeA: str, typeB: str) -> str:
-    ...
+def getMostStrictType(typeA: str, typeB: str) -> str: ...
 ```
 
 
@@ -372,8 +355,5 @@ Combine the spdx ids.
 #### Signature
 
 ```python
-def mergeSPDX(spdxA: str, spdxB: str) -> str:
-    ...
+def mergeSPDX(spdxA: str, spdxB: str) -> str: ...
 ```
-
-
