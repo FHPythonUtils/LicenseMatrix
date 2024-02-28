@@ -87,7 +87,7 @@ def buildLicenses(
 
 ### LicenseMatrix().closestSPDX
 
-[Show source in license_matrix.py:135](../../../licensematrix/license_matrix.py#L135)
+[Show source in license_matrix.py:140](../../../licensematrix/license_matrix.py#L140)
 
 Guarantee a license from a spdx id (may be inaccurate).
 
@@ -107,7 +107,7 @@ def closestSPDX(self, spdx: str) -> License: ...
 
 ### LicenseMatrix().closestTitle
 
-[Show source in license_matrix.py:149](../../../licensematrix/license_matrix.py#L149)
+[Show source in license_matrix.py:156](../../../licensematrix/license_matrix.py#L156)
 
 Guarantee a license from a name (may be inaccurate).
 
@@ -127,7 +127,7 @@ def closestTitle(self, name: str) -> License: ...
 
 ### LicenseMatrix().licenseFromAltName
 
-[Show source in license_matrix.py:100](../../../licensematrix/license_matrix.py#L100)
+[Show source in license_matrix.py:105](../../../licensematrix/license_matrix.py#L105)
 
 Get the license from an altName.
 
@@ -147,7 +147,7 @@ def licenseFromAltName(self, altName: str) -> License | None: ...
 
 ### LicenseMatrix().licenseFromName
 
-[Show source in license_matrix.py:86](../../../licensematrix/license_matrix.py#L86)
+[Show source in license_matrix.py:91](../../../licensematrix/license_matrix.py#L91)
 
 Get the license from a name.
 
@@ -167,7 +167,7 @@ def licenseFromName(self, name: str) -> License | None: ...
 
 ### LicenseMatrix().licenseFromSPDX
 
-[Show source in license_matrix.py:72](../../../licensematrix/license_matrix.py#L72)
+[Show source in license_matrix.py:77](../../../licensematrix/license_matrix.py#L77)
 
 Get the license from a spdx id.
 
@@ -187,7 +187,7 @@ def licenseFromSPDX(self, spdx: str) -> License | None: ...
 
 ### LicenseMatrix().searchLicenses
 
-[Show source in license_matrix.py:115](../../../licensematrix/license_matrix.py#L115)
+[Show source in license_matrix.py:120](../../../licensematrix/license_matrix.py#L120)
 
 Get a list of candidate licenses from a search string.
 

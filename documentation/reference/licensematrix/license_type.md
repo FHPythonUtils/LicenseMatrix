@@ -181,7 +181,7 @@ def mergeIntoDest(self, dest: License): ...
 
 ### License().naiveCompatDest
 
-[Show source in license_type.py:225](../../../licensematrix/license_type.py#L225)
+[Show source in license_type.py:229](../../../licensematrix/license_type.py#L229)
 
 Check the source (self) is compatible with the destination license (rhs).
 
@@ -201,7 +201,7 @@ def naiveCompatDest(self, dest: License) -> bool: ...
 
 ### License().naiveCompatDestLinking
 
-[Show source in license_type.py:205](../../../licensematrix/license_type.py#L205)
+[Show source in license_type.py:207](../../../licensematrix/license_type.py#L207)
 
 Check the source (self) is compatible with the destination license (rhs).
 
@@ -223,7 +223,7 @@ def naiveCompatDestLinking(self, dest: License) -> bool: ...
 
 ### License().naiveCompatSource
 
-[Show source in license_type.py:187](../../../licensematrix/license_type.py#L187)
+[Show source in license_type.py:189](../../../licensematrix/license_type.py#L189)
 
 Check the destination (rhs) is compatible with the source license (self).
 
@@ -287,7 +287,7 @@ def termsCompatible(self, dest: License) -> bool: ...
 
 ## equal
 
-[Show source in license_type.py:281](../../../licensematrix/license_type.py#L281)
+[Show source in license_type.py:285](../../../licensematrix/license_type.py#L285)
 
 Are two licenses equal?
 
@@ -314,7 +314,7 @@ def equal(licenseA: License, licenseB: License) -> bool: ...
 
 ## getMostStrictType
 
-[Show source in license_type.py:246](../../../licensematrix/license_type.py#L246)
+[Show source in license_type.py:250](../../../licensematrix/license_type.py#L250)
 
 Return the most 'strict' type of license from the available types.
 
@@ -337,7 +337,7 @@ def getMostStrictType(typeA: str, typeB: str) -> str: ...
 
 ## mergeSPDX
 
-[Show source in license_type.py:264](../../../licensematrix/license_type.py#L264)
+[Show source in license_type.py:268](../../../licensematrix/license_type.py#L268)
 
 Combine the spdx ids.
 
