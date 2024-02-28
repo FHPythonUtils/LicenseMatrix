@@ -1,8 +1,6 @@
 # LicenseMatrix
 
-[Licensematrix Index](../README.md#licensematrix-index) /
-[Licensematrix](./index.md#licensematrix) /
-LicenseMatrix
+[Licensematrix Index](../README.md#licensematrix-index) / [Licensematrix](./index.md#licensematrix) / LicenseMatrix
 
 > Auto-generated documentation for [licensematrix.license_matrix](../../../licensematrix/license_matrix.py) module.
 

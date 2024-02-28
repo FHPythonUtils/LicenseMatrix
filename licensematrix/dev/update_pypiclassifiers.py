@@ -17,7 +17,9 @@ SPDX = json.loads(Path(THISDIR / "spdx.json").read_text(encoding="utf-8"))["lice
 classifiers = {}
 
 # Grab licenses from pypiclassifiers
-for line in Path(THISDIR / "pypiclassifiers.txt").read_text(encoding="utf-8").splitlines(False):
+for line in (
+	Path(THISDIR / "pypiclassifiers.txt").read_text(encoding="utf-8").splitlines(False)
+):
 	line = line.strip()
 	spdx = None
 	similarity = []

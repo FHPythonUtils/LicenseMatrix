@@ -21,7 +21,9 @@ class LicenseMatrix:
 		"""Make a list of Licenses from a json file."""
 		self.licenses = self.buildLicenses()
 
-	def buildLicenses(self, fileName: str = str(THISDIR / "license_matrix.json")) -> list[License]:
+	def buildLicenses(
+		self, fileName: str = str(THISDIR / "license_matrix.json")
+	) -> list[License]:
 		"""Generate a list of licenses from a specified license_matrix...
 
 		Use license_matrix.json (part of the project) by default. Json format is:
@@ -67,7 +69,10 @@ class LicenseMatrix:
 			list[License]: list of Licenses
 		"""
 		matrixDict = json.loads(Path(fileName).read_text(encoding="utf-8"))
-		return [License(matrixDict[lice]["name"], fromDict=matrixDict[lice]) for lice in matrixDict]
+		return [
+			License(matrixDict[lice]["name"], fromDict=matrixDict[lice])
+			for lice in matrixDict
+		]
 
 	def licenseFromSPDX(self, spdx: str) -> License | None:
 		"""Get the license from a spdx id.
@@ -143,7 +148,9 @@ class LicenseMatrix:
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append((SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice))
+			licenses.append(
+				(SequenceMatcher(None, spdx.lower(), lice.spdx.lower()).ratio(), lice)
+			)
 		return max(licenses, key=itemgetter(0))[1]
 
 	def closestTitle(self, name: str) -> License:
@@ -157,5 +164,7 @@ class LicenseMatrix:
 		"""
 		licenses = []
 		for lice in self.licenses:
-			licenses.append((SequenceMatcher(None, name.lower(), lice.name.lower()).ratio(), lice))
+			licenses.append(
+				(SequenceMatcher(None, name.lower(), lice.name.lower()).ratio(), lice)
+			)
 		return max(licenses, key=itemgetter(0))[1]

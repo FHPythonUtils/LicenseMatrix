@@ -176,7 +176,9 @@ class License:
 			bool: are the licenses compatible?
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if strict.index(dest.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
+		if (
+			strict.index(dest.type) > 2
+		):  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if dest.isViral() and not equal(self, dest):
 			return False
@@ -214,7 +216,9 @@ class License:
 			bool: are the licenses compatible?
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if strict.index(self.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
+		if (
+			strict.index(self.type) > 2
+		):  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if self.isViral() and not equal(self, dest):
 			return False

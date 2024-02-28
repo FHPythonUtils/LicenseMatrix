@@ -24,14 +24,18 @@ documentation = "https://github.com/FHPythonUtils/LicenseMatrix/blob/master/READ
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 
-[tool.poetry.dev-dependencies]
-requests-cache = "^1.1.1"
+[tool.poetry.group.dev.dependencies]
+requests = "^2.31.0"
+requests-cache = "^1.2.0"
 
-[tool.black]
-line-length = 100
-target-version = ["py38"]
+
+[tool.ruff.format]
+indent-style = "tab"
+docstring-code-format = true
+line-ending = "lf"
+
 
 [tool.isort]
 profile = "black"

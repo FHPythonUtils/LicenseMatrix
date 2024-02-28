@@ -1,8 +1,6 @@
 # License Type
 
-[Licensematrix Index](../README.md#licensematrix-index) /
-[Licensematrix](./index.md#licensematrix) /
-License Type
+[Licensematrix Index](../README.md#licensematrix-index) / [Licensematrix](./index.md#licensematrix) / License Type
 
 > Auto-generated documentation for [licensematrix.license_type](../../../licensematrix/license_type.py) module.
 
