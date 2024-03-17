@@ -1,5 +1,4 @@
-"""Set up matrix on startup.
-"""
+"""Set up matrix on startup."""
 
 from __future__ import annotations
 

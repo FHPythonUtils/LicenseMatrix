@@ -53,7 +53,7 @@ class License:
 
 ### License().__repr__
 
-[Show source in license_type.py:71](../../../licensematrix/license_type.py#L71)
+[Show source in license_type.py:73](../../../licensematrix/license_type.py#L73)
 
 Get the string representation.
 
@@ -65,7 +65,7 @@ def __repr__(self) -> str: ...
 
 ### License().__str__
 
-[Show source in license_type.py:75](../../../licensematrix/license_type.py#L75)
+[Show source in license_type.py:77](../../../licensematrix/license_type.py#L77)
 
 To string.
 
@@ -77,7 +77,7 @@ def __str__(self) -> str: ...
 
 ### License().isCopyleft
 
-[Show source in license_type.py:87](../../../licensematrix/license_type.py#L87)
+[Show source in license_type.py:89](../../../licensematrix/license_type.py#L89)
 
 Is the License Copyleft?
 
@@ -89,7 +89,7 @@ def isCopyleft(self): ...
 
 ### License().isPermissive
 
-[Show source in license_type.py:79](../../../licensematrix/license_type.py#L79)
+[Show source in license_type.py:81](../../../licensematrix/license_type.py#L81)
 
 Is the License Permissive?
 
@@ -101,7 +101,7 @@ def isPermissive(self): ...
 
 ### License().isPublicDomain
 
-[Show source in license_type.py:95](../../../licensematrix/license_type.py#L95)
+[Show source in license_type.py:97](../../../licensematrix/license_type.py#L97)
 
 Is the License Public Domain?
 
@@ -113,7 +113,7 @@ def isPublicDomain(self): ...
 
 ### License().isViral
 
-[Show source in license_type.py:91](../../../licensematrix/license_type.py#L91)
+[Show source in license_type.py:93](../../../licensematrix/license_type.py#L93)
 
 Is the License Viral?
 
@@ -125,7 +125,7 @@ def isViral(self): ...
 
 ### License().isWeakCopyleft
 
-[Show source in license_type.py:83](../../../licensematrix/license_type.py#L83)
+[Show source in license_type.py:85](../../../licensematrix/license_type.py#L85)
 
 Is the License Weak Copyleft?
 
@@ -137,7 +137,7 @@ def isWeakCopyleft(self): ...
 
 ### License().mergeBoth
 
-[Show source in license_type.py:99](../../../licensematrix/license_type.py#L99)
+[Show source in license_type.py:101](../../../licensematrix/license_type.py#L101)
 
 Combine two licenses into one super license.
 
@@ -145,11 +145,13 @@ Performs no checks on compatibility, this is up to the user.
 
 #### Arguments
 
-- `rhs` *License* - the other license to merge
+----
+ - `rhs` *License* - the other license to merge
 
 #### Returns
 
-- [License](#license) - the new, combined license
+-------
+ - [License](#license) - the new, combined license
 
 #### Signature
 
@@ -159,7 +161,7 @@ def mergeBoth(self, rhs: License): ...
 
 ### License().mergeIntoDest
 
-[Show source in license_type.py:121](../../../licensematrix/license_type.py#L121)
+[Show source in license_type.py:126](../../../licensematrix/license_type.py#L126)
 
 Combine two licenses into one super license, but preserve the...
 
@@ -167,11 +169,13 @@ destination name. Performs no checks on compatibility, this is up to the user.
 
 #### Arguments
 
-- `dest` *License* - the other license to merge
+----
+ - `dest` *License* - the other license to merge
 
 #### Returns
 
-- [License](#license) - the new, combined license
+-------
+ - [License](#license) - the new, combined license
 
 #### Signature
 
@@ -181,17 +185,19 @@ def mergeIntoDest(self, dest: License): ...
 
 ### License().naiveCompatDest
 
-[Show source in license_type.py:229](../../../licensematrix/license_type.py#L229)
+[Show source in license_type.py:245](../../../licensematrix/license_type.py#L245)
 
 Check the source (self) is compatible with the destination license (rhs).
 
 #### Arguments
 
-- `dest` *License* - the destination license
+----
+ - `dest` *License* - the destination license
 
 #### Returns
 
-- `bool` - are the licenses compatible?
+-------
+ - `bool` - are the licenses compatible?
 
 #### Signature
 
@@ -201,7 +207,7 @@ def naiveCompatDest(self, dest: License) -> bool: ...
 
 ### License().naiveCompatDestLinking
 
-[Show source in license_type.py:207](../../../licensematrix/license_type.py#L207)
+[Show source in license_type.py:222](../../../licensematrix/license_type.py#L222)
 
 Check the source (self) is compatible with the destination license (rhs).
 
@@ -209,11 +215,13 @@ For linking licenses
 
 #### Arguments
 
-- `dest` *License* - the destination license
+----
+ - `dest` *License* - the destination license
 
 #### Returns
 
-- `bool` - are the licenses compatible?
+-------
+ - `bool` - are the licenses compatible?
 
 #### Signature
 
@@ -223,17 +231,19 @@ def naiveCompatDestLinking(self, dest: License) -> bool: ...
 
 ### License().naiveCompatSource
 
-[Show source in license_type.py:189](../../../licensematrix/license_type.py#L189)
+[Show source in license_type.py:201](../../../licensematrix/license_type.py#L201)
 
 Check the destination (rhs) is compatible with the source license (self).
 
 #### Arguments
 
-- `dest` *License* - the destination license
+----
+ - `dest` *License* - the destination license
 
 #### Returns
 
-- `bool` - are the licenses compatible?
+-------
+ - `bool` - are the licenses compatible?
 
 #### Signature
 
@@ -243,7 +253,7 @@ def naiveCompatSource(self, dest: License) -> bool: ...
 
 ### License().naiveCompatSourceLinking
 
-[Show source in license_type.py:167](../../../licensematrix/license_type.py#L167)
+[Show source in license_type.py:178](../../../licensematrix/license_type.py#L178)
 
 Check the destination (rhs) is compatible with the source license (self).
 
@@ -251,11 +261,13 @@ For linking licenses
 
 #### Arguments
 
-- `dest` *License* - the destination license
+----
+ - `dest` *License* - the destination license
 
 #### Returns
 
-- `bool` - are the licenses compatible?
+-------
+ - `bool` - are the licenses compatible?
 
 #### Signature
 
@@ -265,17 +277,19 @@ def naiveCompatSourceLinking(self, dest: License) -> bool: ...
 
 ### License().termsCompatible
 
-[Show source in license_type.py:143](../../../licensematrix/license_type.py#L143)
+[Show source in license_type.py:151](../../../licensematrix/license_type.py#L151)
 
 Check the destination terms (rhs) are compatible with the source license terms (self).
 
 #### Arguments
 
-- `dest` *License* - the destination license
+----
+ - `dest` *License* - the destination license
 
 #### Returns
 
-- `bool` - are the license terms compatible?
+-------
+ - `bool` - are the license terms compatible?
 
 #### Signature
 
@@ -287,18 +301,20 @@ def termsCompatible(self, dest: License) -> bool: ...
 
 ## equal
 
-[Show source in license_type.py:285](../../../licensematrix/license_type.py#L285)
+[Show source in license_type.py:310](../../../licensematrix/license_type.py#L310)
 
 Are two licenses equal?
 
 #### Arguments
 
-- `licenseA` *License* - the first license
-- `licenseB` *License* - the second license
+----
+ - `licenseA` *License* - the first license
+ - `licenseB` *License* - the second license
 
 #### Returns
 
-- `bool` - equal?
+-------
+ - `bool` - equal?
 
 #### Signature
 
@@ -314,18 +330,20 @@ def equal(licenseA: License, licenseB: License) -> bool: ...
 
 ## getMostStrictType
 
-[Show source in license_type.py:250](../../../licensematrix/license_type.py#L250)
+[Show source in license_type.py:269](../../../licensematrix/license_type.py#L269)
 
 Return the most 'strict' type of license from the available types.
 
 #### Arguments
 
-- `typeA` *str* - type of the first license
-- `typeB` *str* - type of the second license
+----
+ - `typeA` *str* - type of the first license
+ - `typeB` *str* - type of the second license
 
 #### Returns
 
-- `str` - the most 'strict' type
+-------
+ - `str` - the most 'strict' type
 
 #### Signature
 
@@ -337,18 +355,20 @@ def getMostStrictType(typeA: str, typeB: str) -> str: ...
 
 ## mergeSPDX
 
-[Show source in license_type.py:268](../../../licensematrix/license_type.py#L268)
+[Show source in license_type.py:290](../../../licensematrix/license_type.py#L290)
 
 Combine the spdx ids.
 
 #### Arguments
 
-- `spdxA` *str* - spdx of the first license
-- `spdxB` *str* - spdx of the second license
+----
+ - `spdxA` *str* - spdx of the first license
+ - `spdxB` *str* - spdx of the second license
 
 #### Returns
 
-- `str` - combined spdx
+-------
+ - `str` - combined spdx
 
 #### Signature
 

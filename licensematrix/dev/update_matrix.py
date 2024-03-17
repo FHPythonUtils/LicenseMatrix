@@ -1,5 +1,4 @@
-"""Update the license_matrix.json using https://tldrlegal.com/ and licenselist.txt.
-"""
+"""Update the license_matrix.json using https://tldrlegal.com/ and licenselist.txt."""
 
 from __future__ import annotations
 
@@ -24,9 +23,7 @@ SPDX = json.loads(Path(THISDIR / "spdx.json").read_text(encoding="utf-8"))["lice
 licenseMat = {}
 
 # Grab ~50 licenses from tldrlegal
-for line in (
-	Path(THISDIR / "licenselist.txt").read_text(encoding="utf-8").splitlines(False)
-):
+for line in Path(THISDIR / "licenselist.txt").read_text(encoding="utf-8").splitlines(False):
 	# Find the json containing all of the data we need
 	r = requests.get(line.strip())
 	p = re.compile(r"<a class=\"btn\" href=\"(.*?)\">View as JSON<\/a>", re.MULTILINE)
@@ -71,8 +68,7 @@ for line in (
 		spdx += "_CHK_DUP"
 	licenseMat[spdx] = {
 		"name": data["title"],
-		"altnames": [data["slug"]]
-		+ ([data["shorthand"]] if "shorthand" in data else []),
+		"altnames": [data["slug"]] + ([data["shorthand"]] if "shorthand" in data else []),
 		"tags": tags,
 		"must": must,
 		"cannot": cannot,
@@ -119,15 +115,11 @@ for lice in licenseList:
 		}
 
 # Enrich with pypi classifiers
-CLASSIFIERS = json.loads(
-	Path(THISDIR / "pypi_classifiers.json").read_text(encoding="utf-8")
-)
+CLASSIFIERS = json.loads(Path(THISDIR / "pypi_classifiers.json").read_text(encoding="utf-8"))
 
 for spdx, value in licenseMat.items():
 	if spdx in CLASSIFIERS:
-		value["altnames"].extend(
-			CLASSIFIERS[spdx]["altnames"] + [CLASSIFIERS[spdx]["name"]]
-		)
+		value["altnames"].extend(CLASSIFIERS[spdx]["altnames"] + [CLASSIFIERS[spdx]["name"]])
 
 # Write to file
 Path(THISDIR / "license_matrix.json").write_text(

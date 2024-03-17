@@ -31,6 +31,7 @@ class License:
 		"""Construct License. Create from a dict of 'by hand'.
 
 		Args:
+		----
 			name (str, optional): name. Defaults to "".
 			tags (Optional[list[str]], optional): list of alt names.
 			Defaults to None.
@@ -46,6 +47,7 @@ class License:
 			spdx (str, optional): the spdx id for the license. Defaults to "".
 			fromDict (Optional[dict[str, Any]], optional): create from dict.
 			Defaults to None.
+
 		"""
 		self.name = name
 		self.altNames = altNames if altNames is not None else []
@@ -102,10 +104,13 @@ class License:
 		Performs no checks on compatibility, this is up to the user.
 
 		Args:
+		----
 			rhs (License): the other license to merge
 
 		Returns:
+		-------
 			License: the new, combined license
+
 		"""
 		return License(
 			self.name + "+" + rhs.name,
@@ -124,10 +129,13 @@ class License:
 		destination name. Performs no checks on compatibility, this is up to the user.
 
 		Args:
+		----
 			dest (License): the other license to merge
 
 		Returns:
+		-------
 			License: the new, combined license
+
 		"""
 		return License(
 			dest.name,
@@ -144,10 +152,13 @@ class License:
 		"""Check the destination terms (rhs) are compatible with the source license terms (self).
 
 		Args:
+		----
 			dest (License): the destination license
 
 		Returns:
+		-------
 			bool: are the license terms compatible?
+
 		"""
 		# If any of must is under cannot?
 		if (
@@ -170,15 +181,16 @@ class License:
 		For linking licenses
 
 		Args:
+		----
 			dest (License): the destination license
 
 		Returns:
+		-------
 			bool: are the licenses compatible?
+
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if (
-			strict.index(dest.type) > 2
-		):  # if the dest license is Copyleft/ Viral then unlikely
+		if strict.index(dest.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if dest.isViral() and not equal(self, dest):
 			return False
@@ -190,10 +202,13 @@ class License:
 		"""Check the destination (rhs) is compatible with the source license (self).
 
 		Args:
+		----
 			dest (License): the destination license
 
 		Returns:
+		-------
 			bool: are the licenses compatible?
+
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		if strict.index(self.type) < strict.index(dest.type):
@@ -210,15 +225,16 @@ class License:
 		For linking licenses
 
 		Args:
+		----
 			dest (License): the destination license
 
 		Returns:
+		-------
 			bool: are the licenses compatible?
+
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
-		if (
-			strict.index(self.type) > 2
-		):  # if the dest license is Copyleft/ Viral then unlikely
+		if strict.index(self.type) > 2:  # if the dest license is Copyleft/ Viral then unlikely
 			return False
 		if self.isViral() and not equal(self, dest):
 			return False
@@ -230,10 +246,13 @@ class License:
 		"""Check the source (self) is compatible with the destination license (rhs).
 
 		Args:
+		----
 			dest (License): the destination license
 
 		Returns:
+		-------
 			bool: are the licenses compatible?
+
 		"""
 		strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 		# If the source has a more restrictive license then the derivative work
@@ -251,11 +270,14 @@ def getMostStrictType(typeA: str, typeB: str) -> str:
 	"""Return the most 'strict' type of license from the available types.
 
 	Args:
+	----
 		typeA (str): type of the first license
 		typeB (str): type of the second license
 
 	Returns:
+	-------
 		str: the most 'strict' type
+
 	"""
 	strict = ["Public Domain", "Permissive", "Weak Copyleft", "Copyleft", "Viral"]
 	if len(typeA) == 0:
@@ -269,11 +291,14 @@ def mergeSPDX(spdxA: str, spdxB: str) -> str:
 	"""Combine the spdx ids.
 
 	Args:
+	----
 		spdxA (str): spdx of the first license
 		spdxB (str): spdx of the second license
 
 	Returns:
+	-------
 		str: combined spdx
+
 	"""
 	if len(spdxA) == 0:
 		return spdxB
@@ -286,10 +311,13 @@ def equal(licenseA: License, licenseB: License) -> bool:
 	"""Are two licenses equal?
 
 	Args:
+	----
 		licenseA (License): the first license
 		licenseB (License): the second license
 
 	Returns:
+	-------
 		bool: equal?
+
 	"""
 	return licenseA.spdx == licenseB.spdx or licenseA.name == licenseB.name
