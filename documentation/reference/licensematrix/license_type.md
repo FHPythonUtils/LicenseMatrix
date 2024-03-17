@@ -48,7 +48,7 @@ class License:
         typeIn: str = "",
         spdx: str = "",
         fromDict: dict[str, Any] | None = None,
-    ): ...
+    ) -> None: ...
 ```
 
 ### License().__repr__
@@ -79,7 +79,7 @@ def __str__(self) -> str: ...
 
 [Show source in license_type.py:89](../../../licensematrix/license_type.py#L89)
 
-Is the License Copyleft?
+Is the License Copyleft?.
 
 #### Signature
 
@@ -91,7 +91,7 @@ def isCopyleft(self): ...
 
 [Show source in license_type.py:81](../../../licensematrix/license_type.py#L81)
 
-Is the License Permissive?
+Is the License Permissive?.
 
 #### Signature
 
@@ -103,7 +103,7 @@ def isPermissive(self): ...
 
 [Show source in license_type.py:97](../../../licensematrix/license_type.py#L97)
 
-Is the License Public Domain?
+Is the License Public Domain?.
 
 #### Signature
 
@@ -115,7 +115,7 @@ def isPublicDomain(self): ...
 
 [Show source in license_type.py:93](../../../licensematrix/license_type.py#L93)
 
-Is the License Viral?
+Is the License Viral?.
 
 #### Signature
 
@@ -127,7 +127,7 @@ def isViral(self): ...
 
 [Show source in license_type.py:85](../../../licensematrix/license_type.py#L85)
 
-Is the License Weak Copyleft?
+Is the License Weak Copyleft?.
 
 #### Signature
 
@@ -303,7 +303,7 @@ def termsCompatible(self, dest: License) -> bool: ...
 
 [Show source in license_type.py:310](../../../licensematrix/license_type.py#L310)
 
-Are two licenses equal?
+Are two licenses equal?.
 
 #### Arguments
 

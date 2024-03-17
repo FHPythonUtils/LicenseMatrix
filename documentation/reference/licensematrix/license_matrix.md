@@ -24,7 +24,7 @@ Make a list of Licenses from a json file.
 
 ```python
 class LicenseMatrix:
-    def __init__(self): ...
+    def __init__(self) -> None: ...
 ```
 
 ### LicenseMatrix().buildLicenses
@@ -87,6 +87,10 @@ def buildLicenses(
 ) -> list[License]: ...
 ```
 
+#### See also
+
+- [License](./license_type.md#license)
+
 ### LicenseMatrix().closestSPDX
 
 [Show source in license_matrix.py:150](../../../licensematrix/license_matrix.py#L150)
@@ -109,6 +113,10 @@ Guarantee a license from a spdx id (may be inaccurate).
 def closestSPDX(self, spdx: str) -> License: ...
 ```
 
+#### See also
+
+- [License](./license_type.md#license)
+
 ### LicenseMatrix().closestTitle
 
 [Show source in license_matrix.py:167](../../../licensematrix/license_matrix.py#L167)
@@ -130,6 +138,10 @@ Guarantee a license from a name (may be inaccurate).
 ```python
 def closestTitle(self, name: str) -> License: ...
 ```
+
+#### See also
+
+- [License](./license_type.md#license)
 
 ### LicenseMatrix().licenseFromAltName
 
@@ -218,3 +230,7 @@ Get a list of candidate licenses from a search string.
 ```python
 def searchLicenses(self, search: str) -> list[License]: ...
 ```
+
+#### See also
+
+- [License](./license_type.md#license)

@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 from operator import itemgetter
 from pathlib import Path
 
-from .license_type import License
+from licensematrix.license_type import License
 
 THISDIR = Path(__file__).resolve().parent
 
@@ -17,7 +17,7 @@ class LicenseMatrix:
 
 	__slots__ = ["licenses"]
 
-	def __init__(self):
+	def __init__(self) -> None:
 		"""Make a list of Licenses from a json file."""
 		self.licenses = self.buildLicenses()
 

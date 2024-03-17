@@ -3,7 +3,7 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
-## 2022 - 2022/04/09
+## 2024 - 2024/03/17
 
 - Removed ujson optional dependency per https://pythonspeed.com/articles/faster-json-library/:
   tldr it probably won't be significantly faster and may be error prone

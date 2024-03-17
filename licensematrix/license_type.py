@@ -27,7 +27,7 @@ class License:
 		typeIn: str = "",
 		spdx: str = "",
 		fromDict: dict[str, Any] | None = None,
-	):
+	) -> None:
 		"""Construct License. Create from a dict of 'by hand'.
 
 		Args:
@@ -79,23 +79,23 @@ class License:
 		return f"<{self.name} type:{self.type} spdx:{self.spdx}>"
 
 	def isPermissive(self):
-		"""Is the License Permissive?"""
+		"""Is the License Permissive?."""
 		return self.type == "Permissive"
 
 	def isWeakCopyleft(self):
-		"""Is the License Weak Copyleft?"""
+		"""Is the License Weak Copyleft?."""
 		return self.type == "Weak Copyleft"
 
 	def isCopyleft(self):
-		"""Is the License Copyleft?"""
+		"""Is the License Copyleft?."""
 		return self.type == "Copyleft"
 
 	def isViral(self):
-		"""Is the License Viral?"""
+		"""Is the License Viral?."""
 		return self.type == "Viral"
 
 	def isPublicDomain(self):
-		"""Is the License Public Domain?"""
+		"""Is the License Public Domain?."""
 		return self.type == "Public Domain"
 
 	def mergeBoth(self, rhs: License):
@@ -308,7 +308,7 @@ def mergeSPDX(spdxA: str, spdxB: str) -> str:
 
 
 def equal(licenseA: License, licenseB: License) -> bool:
-	"""Are two licenses equal?
+	"""Are two licenses equal?.
 
 	Args:
 	----

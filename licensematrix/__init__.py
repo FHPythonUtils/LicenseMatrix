@@ -2,6 +2,6 @@
 
 from __future__ import annotations
 
-from .license_matrix import LicenseMatrix
+from licensematrix.license_matrix import LicenseMatrix
 
 licenseMatrix = LicenseMatrix()
